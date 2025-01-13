@@ -21,21 +21,54 @@
 				</nav>
 			</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Model Training Analysis</h1>
-							<span class="image fit"><img src="images/AI INST.png" alt="" /></span>
-							<p>The Insight Dashboard offers a comprehensive analysis of multiple AI models, detailing their training hours, launch years, and the progression of model development over time. The project tracks the number of models released each year, providing an insightful look into the evolution of AI technologies. By visualizing the growth and refinement of these models, the dashboard allows users to identify trends in AI advancement and performance, highlighting the increasing sophistication and impact of AI tools over the years.</p>
-							<p>With an intuitive interface and rich visualizations, the dashboard presents an in-depth view of the timeline and performance metrics for each model. This project is a powerful tool for understanding how AI has evolved, offering valuable context to the development cycle of these models and showcasing the advancements made in the field over time. It provides clear insights into the strategic decisions behind model releases, giving a clearer picture of AI’s transformation in various industries.</p>
-							<P> <iframe title="AI Insight Dashboard: Model Training Analysis" width="1425" height="875" src="https://app.powerbi.com/view?r=eyJrIjoiYjJhZDNhOTEtMjk4Yi00ZGJjLTlkYzUtMDM5MDRhMTAzMmY3IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" frameborder="0" allowFullScreen="true"></iframe> </p>
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <h1 class="major">Model Training Analysis</h1>
+            <span class="image fit">
+                <img src="images/AI INST.png" alt="" />
+            </span>
+            <p>
+                The Insight Dashboard offers a comprehensive analysis of multiple AI models, detailing their training hours, launch years, and the progression of model development over time. The project tracks the number of models released each year, providing an insightful look into the evolution of AI technologies. By visualizing the growth and refinement of these models, the dashboard allows users to identify trends in AI advancement and performance, highlighting the increasing sophistication and impact of AI tools over the years.
+            </p>
+            <p>
+                With an intuitive interface and rich visualizations, the dashboard presents an in-depth view of the timeline and performance metrics for each model. This project is a powerful tool for understanding how AI has evolved, offering valuable context to the development cycle of these models and showcasing the advancements made in the field over time. It provides clear insights into the strategic decisions behind model releases, giving a clearer picture of AI’s transformation in various industries.
+            </p>
 
-					</section>
+            <!-- Responsive Power BI Embed -->
+            <div class="responsive-container">
+                <iframe title="AI Insight Dashboard: Model Training Analysis" 
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYjJhZDNhOTEtMjk4Yi00ZGJjLTlkYzUtMDM5MDRhMTAzMmY3IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-			</div>
+</div>
+
+<!-- CSS for Responsive Design -->
+<style>
+    /* Responsive Embed Container */
+    .responsive-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 75%; /* Aspect ratio for better fit */
+        position: relative;
+    }
+
+    .responsive-container iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
 
 			
 		<!-- Footer -->

@@ -1,135 +1,138 @@
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
-<!-- End Google Tag Manager -->
-	</head>
-	<body class="is-preload">
-		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyber Incident Insights | Ronen Lesnick</title>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Incident Insights Dashboard</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Project</a></li>
-					</ul>
-				</nav>
-			</header>
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 
-<!-- Wrapper -->
-<div id="wrapper">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PM6L84QZ');
+  </script>
+  <!-- End Google Tag Manager -->
 
-    <!-- Main -->
-    <section id="main" class="wrapper">
-        <div class="inner">
-            <h1 class="major">Global Cyber Incident Insights Dashboard</h1>
-            <span class="image fit">
-                
-            </span>
-            <p>
-                This end-to-end data project provides interactive insights into global cyber threats, combining a robust cloud-based ETL pipeline with business intelligence to support real-time analysis and strategic decision-making.
-            </p>
-
-</p>
-</p>
-Project Overview:
-</p>
-The dashboard analyzes cyber incidents across industries and countries, with a focus on financial impact, risk levels, attack durations, exploited vulnerabilities, and the effectiveness of defense mechanisms.
-</p>
-Key Features:
-</p>
-	•	Global Impact Overview: Treemap visualization of affected populations and financial loss per user by country.
-</p>
-	•	Risk-Level Industry Breakdown: Comparison of high vs. low risk financial impact by industry and attack type.
-</p>
-	•	Attack Duration Analysis: Country-level analysis of how attack duration correlates with financial loss.
-</p>
-	•	Vulnerability & Exploit Profiling: Highlights vulnerabilities such as zero-day and unpatched software.
-</p>
-	•	Defense Strategy Insights: Evaluates the effectiveness of firewalls, encryption, AI-based detection, and more.
-
-            </p>
-            <p>
-                Full Data Engineering Pipeline:
-            </p>
-	•	Data Collection: Orchestrated with Apache Airflow, using a custom DAG to automatically pull raw cyber incident data from Kaggle.
-</p>
-	•	Transformation in Python: Cleaned and processed using Python for consistency and reliability.
-</p>
-	•	Cloud Staging: Transformed datasets are uploaded and stored in Amazon S3.
-</p>
-	•	Production Warehouse: Final data is loaded into Snowflake, which serves as the centralized data warehouse for analytics.
-</p>
-	•	Business Intelligence Layer: Microsoft Fabric (Power BI) is connected to Snowflake and set up with daily scheduled refreshes, ensuring the dashboard is always up to date.
-
-</p>
-</p>
-
-Tools & Technologies Used:
-</p>
-Apache Airflow, Python, Kaggle, Amazon S3, Snowflake, Power BI, Microsoft Fabric
-
-This project showcases advanced data engineering, ETL orchestration, and BI visualization—bridging raw data to meaningful insights with an automated, scalable architecture.
-            </p>
-
-            <!-- Responsive Power BI Embed -->
-            <div class="responsive-container">
-                        ></P> <iframe title="cyber_data_etl_pipeline" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTdhOTg4M2QtM2I2NC00MTNlLWE2ZGItOWM3ODlhMDAxZGRlIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" frameborder="0" allowFullScreen="true"></iframe> </p>
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-<!-- CSS for Responsive Design -->
-<style>
-    /* Responsive Embed Container */
+  <!-- Responsive Embed CSS -->
+  <style>
     .responsive-container {
-        width: 100%;
-        height: auto;
-        padding-bottom: 75%; /* Aspect ratio for better fit */
-        position: relative;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      overflow: hidden;
     }
 
     .responsive-container iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
-</style>
 
-			
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Ronen Lesnick All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+    @media (max-width: 768px) {
+      .responsive-container {
+        padding-bottom: 75%;
+      }
+    }
+  </style>
+</head>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<body class="is-preload">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-	</body>
+  <!-- Header -->
+  <header id="header">
+    <a href="index.html" class="title">Incident Insights Dashboard</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generic.html" class="active">Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <h1 class="major">Global Cyber Incident Insights Dashboard</h1>
+
+        <p>
+          This end-to-end data project provides interactive insights into global cyber threats, combining a robust cloud-based ETL pipeline with business intelligence to support real-time analysis and strategic decision-making.
+        </p>
+
+        <h3>Project Overview:</h3>
+        <p>
+          The dashboard analyzes cyber incidents across industries and countries, with a focus on financial impact, risk levels, attack durations, exploited vulnerabilities, and the effectiveness of defense mechanisms.
+        </p>
+
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Global Impact Overview: Treemap visualization of affected populations and financial loss per user by country.</li>
+          <li>Risk-Level Industry Breakdown: Comparison of high vs. low risk financial impact by industry and attack type.</li>
+          <li>Attack Duration Analysis: Country-level analysis of how attack duration correlates with financial loss.</li>
+          <li>Vulnerability & Exploit Profiling: Highlights vulnerabilities such as zero-day and unpatched software.</li>
+          <li>Defense Strategy Insights: Evaluates the effectiveness of firewalls, encryption, AI-based detection, and more.</li>
+        </ul>
+
+        <h3>Full Data Engineering Pipeline:</h3>
+        <ul>
+          <li>Data Collection: Orchestrated with Apache Airflow, using a custom DAG to automatically pull raw cyber incident data from Kaggle.</li>
+          <li>Transformation in Python: Cleaned and processed using Python for consistency and reliability.</li>
+          <li>Cloud Staging: Transformed datasets are uploaded and stored in Amazon S3.</li>
+          <li>Production Warehouse: Final data is loaded into Snowflake, which serves as the centralized data warehouse for analytics.</li>
+          <li>Business Intelligence Layer: Microsoft Fabric (Power BI) is connected to Snowflake and set up with daily scheduled refreshes.</li>
+        </ul>
+
+        <h3>Tools & Technologies Used:</h3>
+        <p>
+          Apache Airflow, Python, Kaggle, Amazon S3, Snowflake, Power BI, Microsoft Fabric
+        </p>
+
+        <p>
+          This project showcases advanced data engineering, ETL orchestration, and BI visualization—bridging raw data to meaningful insights with an automated, scalable architecture.
+        </p>
+
+        <!-- Responsive Power BI Embed -->
+        <div class="responsive-container">
+          <iframe title="cyber_data_etl_pipeline"
+                  src="https://app.powerbi.com/view?r=eyJrIjoiNTdhOTg4M2QtM2I2NC00MTNlLWE2ZGItOWM3ODlhMDAxZGRlIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9"
+                  frameborder="0" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="wrapper alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; Ronen Lesnick. All rights reserved.</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

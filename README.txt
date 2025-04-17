@@ -24,7 +24,5 @@ This site showcases my hands-on experience and projects in:
 
 ## 📈 Technologies Used
 
-- **Languages:** Python, SQL, HTML/CSS, JavaScript
-- **Tools:** Power BI, Snowflake, Airflow, Azure, AWS S3
-- **Web Hosting:** GitHub Pages
-- **Tracking:** Google Tag Manager + Google Analytics 4 (GA4)
+- Languages: Python, SQL, HTML/CSS, JavaScript
+- Web Hosting: GitHub Pages

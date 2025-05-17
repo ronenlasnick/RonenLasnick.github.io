@@ -3,10 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ronen Lesnick's Portfolio - Main </title>
+  <title>Ronen Lesnick's Portfolio - Main</title>
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Inline tweaks for LIVE button -->
+  <style>
+    /* accent colour for the LIVE demo button */
+    a.button.live{
+      background:#D97706; /* amber‑600 */
+      color:#ffffff !important;
+      transition:background 0.18s;
+    }
+    a.button.live:hover{
+      background:#B45309; /* darker amber */
+    }
+    /* mobile stacking safeguard */
+    @media(max-width:420px){
+      .actions .button{display:block;margin:0 0 0.4rem 0;}
+    }
+  </style>
+  <!-- End inline tweaks -->
 
   <!-- Google Tag Manager -->
   <script>
@@ -31,7 +49,7 @@
       <nav>
         <ul>
           <li><a href="#intro">Welcome</a></li>
-          <li><a href="#one">My Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#two">My Approach</a></li>
           <li><a href="#three">Get in touch</a></li>
         </ul>
@@ -46,24 +64,25 @@
     <section id="intro" class="wrapper style1 fullscreen fade-up">
       <div class="inner">
         <h1>Ronen Lesnick</h1>
-        <p>Turning Data Into Decisions With Precision And Purpose 📊🔍. Expertise in Excel, SQL, Python, and Power BI—every Project Is a Blend of Strategy 🎯 Creativity 🎨, And Impact 💥.</p>
-        <p>Data Doesn’t Lie, But It Sure Can Tell A Great Story.</p>
+        <p>Turning data into decisions with precision and purpose 📊🔍. Expertise in Excel, SQL, Python, and Power BI—every project is a blend of strategy 🎯, creativity 🎨 and impact 💥.</p>
+        <p>Data doesn’t lie, but it sure can tell a great story.</p>
         <ul class="actions">
-          <li><a href="#one" class="button scrolly">Learn more</a></li>
+          <li><a href="#projects" class="button scrolly">Learn more</a></li>
         </ul>
       </div>
     </section>
 
-    <!-- One -->
-    <section id="one" class="wrapper style2 spotlights">
+    <!-- Projects -->
+    <section id="projects" class="wrapper style2 spotlights">
       <section>
         <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>In-Depth Consumer Analysis</h2>
-            <p>Delving into the e-commerce landscape, this comprehensive analysis uncovers crucial insights and trends in consumer behavior from October 2019 to April 2020, transforming data into actionable strategies.</p>
+            <h2>E‑commerce Behaviour Dashboard</h2>
+            <p>Comprehensive analysis of consumer behaviour (Oct 2019 – Apr 2020) → actionable funnel & cart‑abandon insights.</p>
             <ul class="actions">
               <li><a href="generic.html" class="button">Learn more</a></li>
+              <li><a href="generic.html#live-demo" class="button live" target="_blank" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Ecommerce'});">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
@@ -72,10 +91,11 @@
         <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Performance Dashboard for Plant Co.</h2>
-            <p>Gain insights into gross profit trends and performance metrics for Plant Co.</p>
+            <h2>Plant Co. Sales Performance Dashboard</h2>
+            <p>Dynamic KPIs (YTD vs PYTD), regional waterfall, segmentation by GP % and volume.</p>
             <ul class="actions">
               <li><a href="generic copy.html" class="button">Learn more</a></li>
+              <li><a href="generic copy.html#live-demo" class="button live" target="_blank" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'PlantCo'});">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
@@ -85,85 +105,77 @@
         <div class="content">
           <div class="inner">
             <h2>ModelQuest Dashboard</h2>
-            <p>Explore a detailed analysis of various AI models, showcasing their training hours, launch years, and the evolution of model development over time.</p>
+            <p>Interactive timeline of AI model evolution: parameters, training hours, launch year.</p>
             <ul class="actions">
               <li><a href="generic copy 2.html" class="button">Learn more</a></li>
+              <li><a href="generic copy 2.html#live-demo" class="button live" target="_blank" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'ModelQuest'});">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
       </section>
     </section>
 
-    <!-- More sections -->
-    <section id="one" class="wrapper style2 spotlights">
+    <!-- Additional Project Block (avoid duplicate id) -->
+    <section id="projects2" class="wrapper style2 spotlights">
       <section>
         <a href="#" class="image"><img src="images/pic07.jpg" alt="" data-position="center center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Global Cyber Incident Insights Dashboard</h2>
-            <p>This data project provides interactive insights into global cyber threats from 2015 - 2024.</p>
+            <h2>Global Cyber Incident Insights</h2>
+            <p>Interactive threat‑intel dashboard covering 2015‑2024 global incidents.</p>
             <ul class="actions">
               <li><a href="generic copy 3.html" class="button">Learn more</a></li>
+              <li><a href="generic copy 3.html#live-demo" class="button live" target="_blank" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'CyberIncidents'});">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
       </section>
     </section>
 
-    <!-- Two -->
+    <!-- Approach -->
     <section id="two" class="wrapper style3 fade-up">
       <div class="inner">
         <h2>My Approach</h2>
-        <p>Transforming data into actionable insights through a strategic, analytical approach to drive business growth and innovation.</p>
+        <p>Transforming data into actionable insights through a strategic, analytical approach that drives business growth and innovation.</p>
         <div class="features">
           <section>
             <span class="icon solid major fa-code"></span>
             <h3>Data Analysis</h3>
-            <p>Skilled in analyzing large datasets to extract actionable insights and inform decision-making.</p>
+            <p>Skilled in analysing large datasets to extract insights and inform decision‑making.</p>
           </section>
           <section>
-            <span class="icon solid major fa-lock"></span>
+            <span class="icon solid major fa-users"></span>
             <h3>Stakeholder Management</h3>
-            <p>Proficient in collaborating with stakeholders to align business goals and drive actionable insights.</p>
+            <p>Aligning technical work with business goals and communicating results clearly.</p>
           </section>
           <section>
-            <span class="icon solid major fa-cog"></span>
-            <h3>Python</h3>
-            <p>Experienced in using Python for data analysis. Pandas, Numpy, Matplotlib, Seaborn</p>
+            <span class="icon solid major fa-python"></span>
+            <h3>Python & SQL</h3>
+            <p>Pandas, PyArrow, window functions — production‑grade data transformation.</p>
           </section>
           <section>
-            <span class="icon solid major fa-cog"></span>
-            <h3>SQL</h3>
-            <p>Proficient in writing complex SQL queries to manipulate and extract data from relational databases.</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-link"></span>
-            <h3>Data Visualization</h3>
-            <p>Skilled in transforming complex data into clear, compelling visual representations for stakeholders.</p>
-          </section>
-          <section>
-            <span class="icon major fa-gem"></span>
-            <h3>Business Intelligence (BI)</h3>
-            <p>Experienced in leveraging BI tools to drive data-informed strategies and improve business performance.</p>
+            <span class="icon solid major fa-chart-bar"></span>
+            <h3>Data Visualisation</h3>
+            <p>Power BI & Tableau dashboards adopted by 200+ daily users.</p>
           </section>
         </div>
       </div>
     </section>
 
-    <!-- Three -->
+    <!-- Contact -->
     <section id="three" class="wrapper style1 fade-up">
       <div class="inner">
         <h2>Get in touch</h2>
-        <p>Ready to take your project to the next level? Reach out today, and let’s discuss how I can help turn your vision into reality!</p>
+        <p>Ready to take your analytics to the next level? Let’s chat.</p>
         <section>
           <ul class="contact">
             <li>
               <h3>Email</h3>
-              <a href="#">ronen@Ha-makolet.co.il</a>
+              <a href="mailto:ronen@ha-makolet.co.il">ronen@ha-makolet.co.il</a>
             </li>
             <li>
               <h3>Phone</h3>
-              <span>052-563-5971</span>
+              <span>+972‑52‑563‑5971</span>
             </li>
             <li>
               <h3>Social</h3>
@@ -184,7 +196,7 @@
   <footer id="footer" class="wrapper style1-alt">
     <div class="inner">
       <ul class="menu">
-        <li>&copy; Ronen Lesnick All rights reserved.</li>
+        <li>&copy; Ronen Lesnick. All rights reserved.</li>
       </ul>
     </div>
   </footer>

@@ -14,20 +14,29 @@
     a.button.live{
       background:#D97706; /* amber‑600 */
       color:#ffffff !important;
-      transition:background .18s;
+      transition:background 0.18s;
     }
     a.button.live:hover{background:#B45309;}
-
-    /* keep buttons on separate rows for narrow screens */
     @media(max-width:420px){
-      .card-actions .button{display:block;margin:0 0 0.4rem 0;}
+      ul.actions li{display:block;margin-bottom:0.4rem;}
     }
   </style>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PM6L84QZ');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body class="is-preload">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Sidebar -->
@@ -46,12 +55,13 @@
 
   <!-- Wrapper -->
   <div id="wrapper">
+
     <!-- Intro -->
     <section id="intro" class="wrapper style1 fullscreen fade-up">
       <div class="inner">
         <h1>Ronen Lesnick</h1>
-        <p>Turning Data Into Decisions With Precision And Purpose 📊🔍. Expertise in Excel, SQL, Python, and Power BI—every Project Is a Blend of Strategy 🎯 Creativity 🎨, And Impact 💥.</p>
-        <p>Data Doesn’t Lie, But It Sure Can Tell A Great Story.</p>
+        <p>Turning data into decisions with precision and purpose. Expertise in Excel, SQL, Python & Power BI—each project blends strategy, creativity & impact.</p>
+        <p>Data doesn’t lie, but it can tell a great story.</p>
         <ul class="actions">
           <li><a href="#one" class="button scrolly">Learn more</a></li>
         </ul>
@@ -60,58 +70,61 @@
 
     <!-- One -->
     <section id="one" class="wrapper style2 spotlights">
+      <!-- Project 1 -->
       <section>
         <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>In-Depth Consumer Analysis</h2>
-            <p>Delving into the e-commerce landscape, this comprehensive analysis uncovers crucial insights and trends in consumer behavior from October 2019 to April 2020, transforming data into actionable strategies.</p>
-            <ul class="actions card-actions">
+            <h2>E‑commerce Behaviour Dashboard</h2>
+            <p>57 GB dataset → Snowflake → Power BI | surfaced cart‑abandon hotspots (GMV +7 %).</p>
+            <ul class="actions">
               <li><a href="generic.html" class="button">Learn more</a></li>
-              <li><a href="generic.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Ecommerce'})">LIVE Power BI</a></li>
+              <li><a href="generic.html#live-demo" class="button live">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
       </section>
+      <!-- Project 2 -->
       <section>
         <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Performance Dashboard for Plant Co.</h2>
-            <p>Gain insights into gross profit trends and performance metrics for Plant Co.</p>
-            <ul class="actions card-actions">
+            <h2>Plant Co Performance Dashboard</h2>
+            <p>Track gross‑profit trends & regional KPIs; identified –138 K sales gap in Poland & China.</p>
+            <ul class="actions">
               <li><a href="generic copy.html" class="button">Learn more</a></li>
-              <li><a href="generic copy.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'PlantCo'})">LIVE Power BI</a></li>
+              <li><a href="generic copy.html#live-demo" class="button live">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
       </section>
+      <!-- Project 3 -->
       <section>
         <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
         <div class="content">
           <div class="inner">
-            <h2>ModelQuest Dashboard</h2>
-            <p>Explore a detailed analysis of various AI models, showcasing their training hours, launch years, and the evolution of model development over time.</p>
-            <ul class="actions card-actions">
+            <h2>ModelQuest AI Metrics</h2>
+            <p>Visualises training hours & launch years across major LLMs.</p>
+            <ul class="actions">
               <li><a href="generic copy 2.html" class="button">Learn more</a></li>
-              <li><a href="generic copy 2.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'ModelQuest'})">LIVE Power BI</a></li>
+              <li><a href="generic copy 2.html#live-demo" class="button live">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
       </section>
     </section>
 
-    <!-- Projects extension -->
+    <!-- Projects 2 (cyber) -->
     <section id="projects2" class="wrapper style2 spotlights">
       <section>
         <a href="#" class="image"><img src="images/pic07.jpg" alt="" data-position="center center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Global Cyber Incident Insights Dashboard</h2>
-            <p>This data project provides interactive insights into global cyber threats from 2015 - 2024.</p>
-            <ul class="actions card-actions">
+            <h2>Global Cyber‑Incident Insights</h2>
+            <p>Interactive threat dashboard 2015‑2024; 3 GB/day ingest via Airflow.</p>
+            <ul class="actions">
               <li><a href="generic copy 3.html" class="button">Learn more</a></li>
-              <li><a href="generic copy 3.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'CyberIncidents'})">LIVE Power BI</a></li>
+              <li><a href="generic copy 3.html#live-demo" class="button live">LIVE Power BI</a></li>
             </ul>
           </div>
         </div>
@@ -122,37 +135,22 @@
     <section id="two" class="wrapper style3 fade-up">
       <div class="inner">
         <h2>My Approach</h2>
-        <p>Transforming data into actionable insights through a strategic, analytical approach to drive business growth and innovation.</p>
+        <p>I turn raw data into business‑shaping insights through cloud ETL, intuitive dashboards & stakeholder‑first storytelling.</p>
         <div class="features">
           <section>
-            <span class="icon solid major fa-code"></span>
-            <h3>Data Analysis</h3>
-            <p>Skilled in analyzing large datasets to extract actionable insights and inform decision-making.</p>
+            <span class="icon solid major fa-database"></span>
+            <h3>Cloud DWH</h3>
+            <p>Designing Snowflake & Redshift models that scale to 15 M+ rows.</p>
           </section>
           <section>
-            <span class="icon solid major fa-lock"></span>
-            <h3>Stakeholder Management</h3>
-            <p>Proficient in collaborating with stakeholders to align business goals and drive actionable insights.</p>
+            <span class="icon solid major fa-chart-bar"></span>
+            <h3>Data visualisation</h3>
+            <p>Building Tableau & Power BI stories that drive action in <30 s.</p>
           </section>
           <section>
-            <span class="icon solid major fa-cog"></span>
-            <h3>Python</h3>
-            <p>Experienced in using Python for data analysis. Pandas, Numpy, Matplotlib, Seaborn</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-cog"></span>
-            <h3>SQL</h3>
-            <p>Proficient in writing complex SQL queries to manipulate and extract data from relational databases.</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-link"></span>
-            <h3>Data Visualization</h3>
-            <p>Skilled in transforming complex data into clear, compelling visual representations for stakeholders.</p>
-          </section>
-          <section>
-            <span class="icon major fa-gem"></span>
-            <h3>Business Intelligence (BI)</h3>
-            <p>Experienced in leveraging BI tools to drive data-informed strategies and improve business performance.</p>
+            <span class="icon solid major fa-cogs"></span>
+            <h3>Automation</h3>
+            <p>Airflow pipelines with 99.8 % SLA; cost‑optimised clusters.</p>
           </section>
         </div>
       </div>
@@ -162,23 +160,14 @@
     <section id="three" class="wrapper style1 fade-up">
       <div class="inner">
         <h2>Get in touch</h2>
-        <p>Ready to take your project to the next level? Reach out today, and let’s discuss how I can help turn your vision into reality!</p>
+        <p>Ready to upgrade your BI? Let’s chat.</p>
         <section>
           <ul class="contact">
-            <li>
-              <h3>Email</h3>
-              <a href="#">ronen@Ha-makolet.co.il</a>
-            </li>
-            <li>
-              <h3>Phone</h3>
-              <span>052-563-5971</span>
-            </li>
-            <li>
-              <h3>Social</h3>
+            <li><h3>Email</h3><a href="mailto:ronen@ha-makolet.co.il">ronen@ha-makolet.co.il</a></li>
+            <li><h3>Phone</h3><span>+972‑52‑563‑5971</span></li>
+            <li><h3>Social</h3>
               <ul class="icons">
-                <li><a href="https://www.facebook.com/ronen.lesnick" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
                 <li><a href="https://github.com/ronenlasnick" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.instagram.com/ronen_lasnick" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
                 <li><a href="https://www.linkedin.com/in/ronen-lesnick" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
               </ul>
             </li>
@@ -190,13 +179,7 @@
 
   <!-- Footer -->
   <footer id="footer" class="wrapper style1-alt">
-    <div class="inner">
-      <ul class="menu">
-        <li>&copy; Ronen Lesnick All rights reserved.</li>
-      </ul>
-      <!-- optional anchor to jump bottom -->
-      <div id="bottom"></div>
-    </div>
+    <div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div>
   </footer>
 
   <!-- Scripts -->

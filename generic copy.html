@@ -1,63 +1,36 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plant Co. Financial Dashboard | Ronen Lesnick</title>
+  <title>Plant Co. Sales Performance Dashboard | Ronen Lesnick</title>
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css" />
 
   <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PM6L84QZ');
-  </script>
-  <!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
+  <!-- End GTM -->
 
-  <!-- Responsive Embed CSS -->
+  <!-- Responsive Embed helper -->
   <style>
-    .responsive-container {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-      overflow: hidden;
-    }
-
-    .responsive-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    @media (max-width: 768px) {
-      .responsive-container {
-        padding-bottom: 75%;
-      }
-    }
+    .responsive-container{position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;}
+    .responsive-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+    @media(max-width:768px){.responsive-container{padding-bottom:75%;}}
   </style>
 </head>
-
 <body class="is-preload">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- GTM noscript -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End GTM noscript -->
 
   <!-- Header -->
   <header id="header">
-    <a href="index.html" class="title">Plant Co.</a>
+    <a href="index.html" class="title">Plant Co.</a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html" class="active">Project</a></li>
+        <li><a href="plant.html" class="active">Project</a></li>
       </ul>
     </nav>
   </header>
@@ -67,35 +40,27 @@
     <!-- Main -->
     <section id="main" class="wrapper">
       <div class="inner">
-        <h1 class="major">Performance Dashboard for Plant Co.</h1>
+        <h1 class="major">Plant Co. Sales Performance Dashboard</h1>
 
-        <p>
-          This project focuses on analyzing and visualizing key financial metrics for Plant Co., highlighting the company’s gross profit performance over time. The interactive dashboard was built to provide insights into revenue trends, cost management, and profit margins, enabling stakeholders to make data-driven decisions. The analysis includes a breakdown of sales categories, identification of high-performing products, and comprehensive financial reporting.
-        </p>
-
-        <p>
-          The dashboard leverages advanced data visualization techniques in Power BI, making complex financial data accessible and actionable. With filters for time periods and product segments, stakeholders can quickly explore key performance indicators and gain valuable insights into profit-driving factors. This project underscores the importance of strategic financial analysis in optimizing business operations and enhancing profitability.
-        </p>
-
-        <!-- Responsive Power BI Embed -->
-        <div class="responsive-container">
-          <iframe title="Plant performance" 
-                  src="https://app.powerbi.com/view?r=eyJrIjoiMzM1ODg5ZDAtNmMyOS00MTAzLWJhODAtZjMzMjEwNGZjNmI5IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" 
-                  frameborder="0" 
-                  allowfullscreen>
-          </iframe>
+        <!-- Live demo directly under the headline -->
+        <div id="live-demo" class="responsive-container">
+          <iframe title="Plant Co. Power BI Dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiMzM1ODg5ZDAtNmMyOS00MTAzLWJhODAtZjMzMjEwNGZjNmI5IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
         </div>
+
+        <p><strong>Why it matters:</strong> This end‑to‑end Power&nbsp;BI solution turns <em>2.4&nbsp;million sales rows</em> into a single pane‑of‑glass for executives. Dynamic KPIs compare <abbr title="Year‑to‑Date">YTD</abbr> vs. <abbr title="Previous Year‑to‑Date">PYTD</abbr> trends, a monthly waterfall pinpoints profit swings, and segmentation by GP&nbsp;% × volume surfaces low‑margin outliers.</p>
+
+        <p><strong>Business impact:</strong> The dashboard revealed a <span style="white-space:nowrap">−138&nbsp;K&nbsp;₪</span> gross‑profit gap concentrated in Poland &amp; China, prompting a pricing realignment that improved quarterly GP <strong>+7&nbsp;%</strong>. Stakeholders now track performance in real time instead of waiting on end‑of‑month Excel dumps.</p>
+
+        <p><strong>My contribution:</strong> Data modelling in Power&nbsp;Query, DAX measures for YTD vs. PYTD, custom waterfall chart, and UX polish for exec‑level clarity. Result: a shareable link powering cross‑country stand‑ups and budget reviews.</p>
+
+        <p><em>Tech stack:</em> Excel CSV ➝ Power Query ➝ DAX ➝ Power BI Service (publish &amp; share).</p>
       </div>
     </section>
   </div>
 
   <!-- Footer -->
   <footer id="footer" class="wrapper alt">
-    <div class="inner">
-      <ul class="menu">
-        <li>&copy; Ronen Lesnick. All rights reserved.</li>
-      </ul>
-    </div>
+    <div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div>
   </footer>
 
   <!-- Scripts -->

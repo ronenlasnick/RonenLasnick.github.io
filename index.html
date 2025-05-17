@@ -10,25 +10,21 @@
 
   <!-- Inline tweaks for LIVE button -->
   <style>
-    a.button.live {
-      background: #D97706;
-      color: #ffffff !important;
-      transition: background .18s;
+    /* accent colour for the LIVE demo button */
+    a.button.live{
+      background:#D97706; /* amber‑600 */
+      color:#ffffff !important;
+      transition:background 0.18s;
     }
-    a.button.live:hover { background: #B45309; }
+    a.button.live:hover{background:#B45309}
+    /* mobile stacking */
     @media(max-width:420px){
-      .card-actions .button{display:block;margin:0 0 .4rem 0;}
+      ul.actions .button{display:block;margin:0 0 .6rem 0;}
     }
   </style>
 
   <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PM6L84QZ');
-  </script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
   <!-- End Google Tag Manager -->
 </head>
 
@@ -43,8 +39,8 @@
       <nav>
         <ul>
           <li><a href="#intro">Welcome</a></li>
-          <li><a href="#expertise">My Expertise</a></li>
-          <li><a href="#approach">My Approach</a></li>
+          <li><a href="#one">My Expertise</a></li>
+          <li><a href="#two">My Approach</a></li>
           <li><a href="#contact">Get in touch</a></li>
         </ul>
       </nav>
@@ -58,73 +54,110 @@
     <section id="intro" class="wrapper style1 fullscreen fade-up">
       <div class="inner">
         <h1>Ronen Lesnick</h1>
-        <p>BI Developer | Snowflake · Airflow · Tableau<br>Turning data into decisions with precision and purpose.</p>
+        <p>I turn complex data into clear, actionable stories that help teams build better products, sharper strategy, and measurable results.</p>
+        <p>Scroll down to explore live projects and see insight in action.</p>
         <ul class="actions">
-          <li><a href="#expertise" class="button scrolly">Learn more</a></li>
+          <li><a href="#one" class="button scrolly">Learn more</a></li>
         </ul>
       </div>
     </section>
 
-    <!-- Expertise/projects renamed from one -->
-    <section id="expertise" class="wrapper style2 spotlights">
-      <!-- first project-->
+    <!-- Projects -->
+    <section id="one" class="wrapper style2 spotlights">
       <section>
         <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>In‑Depth Consumer Analysis</h2>
-            <p>57 GB e‑commerce dataset → Snowflake → Power BI | <strong>+7 % GMV</strong></p>
-            <div class="card-actions"><a href="generic.html" class="button">Learn more</a><a href="generic.html#live-demo" class="button live" target="_blank">LIVE Power BI</a></div>
+            <h2>In-Depth Consumer Analysis</h2>
+            <p>Comprehensive e‑commerce behaviour analytics (Nov 2019 – Apr 2020) that surface cart‑abandon hotspots and seasonal demand shifts.</p>
+            <ul class="actions">
+              <li><a href="generic.html" class="button">Learn more</a></li>
+              <li><a href="generic.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Ecommerce'})">LIVE Power BI</a></li>
+            </ul>
           </div>
         </div>
       </section>
-      <!-- second project-->
       <section>
         <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Plant Co Performance Dashboard</h2>
-            <p>Multi‑region sales | KPIs YTD vs PYTD | <strong>+140 K insights found</strong></p>
-            <div class="card-actions"><a href="generic copy.html" class="button">Learn more</a><a href="generic copy.html#live-demo" class="button live" target="_blank">LIVE Power BI</a></div>
+            <h2>Performance Dashboard for Plant Co.</h2>
+            <p>Interactive BI that tracks GP%, sales fluctuations, and highlights under‑performing regions to realign strategy.</p>
+            <ul class="actions">
+              <li><a href="generic copy.html" class="button">Learn more</a></li>
+              <li><a href="generic copy.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'PlantCo'})">LIVE Power BI</a></li>
+            </ul>
           </div>
         </div>
       </section>
-      <!-- third project-->
       <section>
         <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
         <div class="content">
           <div class="inner">
             <h2>ModelQuest Dashboard</h2>
-            <p>AI model evolution • Python • Tableau</p>
-            <div class="card-actions"><a href="generic copy 2.html" class="button">Learn more</a><a href="generic copy 2.html#live-demo" class="button live" target="_blank">LIVE Power BI</a></div>
-          </div>
-        </div>
-      </section>
-      <!-- fourth project-->
-      <section>
-        <a href="#" class="image"><img src="images/pic07.jpg" alt="" data-position="center center" /></a>
-        <div class="content">
-          <div class="inner">
-            <h2>Global Cyber Incident Insights</h2>
-            <p>3 GB/day ingest • Snowflake star‑schema • 24/7 SecOps board</p>
-            <div class="card-actions"><a href="generic copy 3.html" class="button">Learn more</a><a href="generic copy 3.html#live-demo" class="button live" target="_blank">LIVE Power BI</a></div>
+            <p>Power BI exploration of AI‑model evolution—training hours, launch years, and performance leaps—all in one interactive view.</p>
+            <ul class="actions">
+              <li><a href="generic copy 2.html" class="button">Learn more</a></li>
+              <li><a href="generic copy 2.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'ModelQuest'})">LIVE Power BI</a></li>
+            </ul>
           </div>
         </div>
       </section>
     </section>
 
-    <!-- Approach -->
-    <section id="approach" class="wrapper style3 fade-up">
+    <!-- Additional project -->
+    <section id="projects2" class="wrapper style2 spotlights">
+      <section>
+        <a href="#" class="image"><img src="images/pic07.jpg" alt="" data-position="center center" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Global Cyber Incident Insights Dashboard</h2>
+            <p>Power BI dashboard turning 9 years of threat data into 24/7 situational awareness for SecOps teams.</p>
+            <ul class="actions">
+              <li><a href="generic copy 3.html" class="button">Learn more</a></li>
+              <li><a href="generic copy 3.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Cyber'})">LIVE Power BI</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- My Approach (kept as‑is) -->
+    <section id="two" class="wrapper style3 fade-up">
       <div class="inner">
         <h2>My Approach</h2>
-        <p>I move from raw data to business decisions through six pillars:</p>
+        <p>I combine rigorous analytics with business context, moving from raw data to decisions that improve revenue, cost, and user‑experience.</p>
         <div class="features">
-          <section><span class="icon solid major fa-database"></span><h3>Data Engineering</h3><p>Cloud ETL pipelines (Airflow, dbt, Snowflake) delivering trusted data.</p></section>
-          <section><span class="icon solid major fa-chart-line"></span><h3>Advanced Analysis</h3><p>SQL window functions & Python ML to surface hidden drivers.</p></section>
-          <section><span class="icon solid major fa-chart-pie"></span><h3>Compelling Visuals</h3><p>Interactive dashboards that turn metrics into action.</p></section>
-          <section><span class="icon solid major fa-bullseye"></span><h3>Business Intelligence</h3><p>KPI frameworks that tie directly to revenue, cost & UX.</p></section>
-          <section><span class="icon solid major fa-users"></span><h3>Stakeholder Collaboration</h3><p>Translate questions into specs & deliverables everyone trusts.</p></section>
-          <section><span class="icon solid major fa-sync-alt"></span><h3>Continuous Optimisation</h3><p>Iterate, measure, and improve—because good data gets better.</p></section>
+          <section>
+            <span class="icon solid major fa-database"></span>
+            <h3>Data Engineering</h3>
+            <p>Design cloud ETL pipelines (Airflow · dbt · Snowflake) that deliver trusted, timely data.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-chart-bar"></span>
+            <h3>Advanced Analysis</h3>
+            <p>Unlock insights with SQL window functions and Python ML where it adds value.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-eye"></span>
+            <h3>Compelling Visuals</h3>
+            <p>Craft Tableau / Power BI stories that move leadership from data to decision.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-gem"></span>
+            <h3>Business Intelligence</h3>
+            <p>Build KPI frameworks that align analytics with revenue and retention goals.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-users"></span>
+            <h3>Stakeholder Collaboration</h3>
+            <p>Translate needs into technical specs and iterate quickly on feedback.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-sync-alt"></span>
+            <h3>Continuous Optimisation</h3>
+            <p>Measure, learn, and improve to keep pipelines fast and insights relevant.</p>
+          </section>
         </div>
       </div>
     </section>
@@ -135,9 +168,16 @@
         <h2>Get in touch</h2>
         <p>Ready to upgrade your BI? Let’s chat.</p>
         <ul class="contact">
-          <li><h3>Email</h3><a href="mailto:ronen@Ha-makolet.co.il">ronen@Ha-makolet.co.il</a></li>
-          <li><h3>Phone</h3><span>+972‑52‑563‑5971</span></li>
-          <li><h3>Social</h3>
+          <li>
+            <h3>Email</h3>
+            <a href="mailto:ronen@Ha-makolet.co.il">ronen@Ha-makolet.co.il</a>
+          </li>
+          <li>
+            <h3>Phone</h3>
+            <span>+972‑52‑563‑5971</span>
+          </li>
+          <li>
+            <h3>Social</h3>
             <ul class="icons">
               <li><a href="https://github.com/ronenlasnick" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
               <li><a href="https://www.linkedin.com/in/ronen-lesnick" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
@@ -146,12 +186,15 @@
         </ul>
       </div>
     </section>
-
-  </div><!-- /wrapper -->
+  </div>
 
   <!-- Footer -->
   <footer id="footer" class="wrapper style1-alt">
-    <div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div>
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; Ronen Lesnick. All rights reserved.</li>
+      </ul>
+    </div>
   </footer>
 
   <!-- Scripts -->

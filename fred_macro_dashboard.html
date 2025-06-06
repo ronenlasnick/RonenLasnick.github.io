@@ -1,92 +1,211 @@
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FRED ETL Dashboard | Ronen Lesnick</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
 
-  <style>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ronen Lesnick's Portfolio - Main</title>
+<!-- Main Stylesheet -->
+<link href="assets/css/main.css" rel="stylesheet"/>
+<!-- Inline tweaks for LIVE button -->
+<style>
     .responsive-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; }
     .responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-    pre.codeblock { background: #f4f4f4; padding: 1em; overflow-x: auto; border-left: 4px solid #555; }
-  </style>
+    pre.codeblock {
+      background: #1e1e2f;
+      color: #e0e0e0;
+      padding: 1.2rem;
+      border-radius: 6px;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-x: auto;
+      line-height: 1.5;
+      box-shadow: 0 0 0 1px #333 inset;
+    }
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
+<!-- End Google Tag Manager -->
 </head>
-
 <body class="is-preload">
-  <header id="header">
-    <a href="index.html" class="title">Macroeconomic ETL Dashboard</a>
-    <nav><ul><li><a href="index.html">Home</a></li><li><a href="#" class="active">Project</a></li></ul></nav>
-  </header>
-
-  <div id="wrapper">
-    <section id="main" class="wrapper">
-      <div class="inner">
-        <h1 class="major">FRED‑Powered Macroeconomic Insights Dashboard</h1>
-
-        <h2 id="live-demo" style="margin-top:0">Interactive Power BI Dashboard</h2>
-        <div class="responsive-container">
-          <iframe title="FRED_ETL_Orchestrator_Daily_Monthly_Quarterly" src="https://app.powerbi.com/view?r=eyJrIjoiNDdiNGIwY2QtNjQwMC00YzI2LTk0NjUtMGQwMDdjMzE2MGEzIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
-        </div>
-
-        <p><strong>Why it matters:</strong> This full-stack ETL and analytics pipeline empowers stakeholders with a near-real-time view of key U.S. economic indicators like inflation, GDP, home prices, unemployment, and retail growth. Designed for decision-makers, hiring managers, and general economics enthusiasts.</p>
-
-        <h3>🔍 Business Need</h3>
-        <p>Hiring managers, recruiters, and the general public often struggle to interpret raw economic data. This dashboard makes the data accessible, visual, and meaningful by transforming macro indicators into insights.</p>
-
-        <h3>🧱 Tech Stack</h3>
-        <p>Azure Databricks · Delta Lake · Apache Spark · FRED API · Power BI (Fabric) · DAX · GitHub</p>
-
-        <h3>⚙️ Architecture Overview</h3>
-        <ul>
-          <li><strong>ETL:</strong> Modular Databricks notebooks ingest FRED data daily/monthly/quarterly → save to Delta</li>
-          <li><strong>Modeling:</strong> Star schema with DimDate, fact_macro_daily, fact_macro_monthly, fact_macro_quarterly</li>
-          <li><strong>Delivery:</strong> Semantic model in Power BI; SQL tables exposed via Delta → Fabric</li>
-          <li><strong>CI/CD:</strong> Pull request workflow with tracked commits on <a href="https://github.com/ronenlasnick/Fred_Data_-Repo" target="_blank">GitHub</a></li>
-        </ul>
-
-        <h3>📌 Sample Python (from 01_fred_daily_pipeline.ipynb)</h3>
-        <pre class="codeblock">
-import requests
-from pyspark.sql.functions import lit
-
-response = requests.get("https://api.stlouisfed.org/fred/series/observations", params=params)
-raw_df = spark.read.json(sc.parallelize([response.json()['observations']]))
-data_df = raw_df.withColumn("indicator", lit("FederalFundsRate"))
-        </pre>
-
-        <h3>🧠 Economic Health Score (Z-Score Normalized DAX)</h3>
-        <pre class="codeblock">
-Econ_Health_Score_4Factor =
-VAR Z_GDP   = ( GDP - AVG(GDP) ) / STDEV(GDP)
-VAR Z_Prof  = ( Profits - AVG(Profits) ) / STDEV(Profits)
-VAR Z_CPI   = ( CPI - AVG(CPI) ) / STDEV(CPI)
-VAR Z_Unemp = ( Unemp - AVG(Unemp) ) / STDEV(Unemp)
-RETURN
-( Z_GDP + Z_Prof - Z_CPI - Z_Unemp ) / 4
-        </pre>
-        <p>This DAX measure quantifies “macro health” on a normalized scale. Higher values = better conditions (GDP ↑, Profits ↑, CPI ↓, Unemployment ↓).</p>
-
-        <h3>📂 GitHub & DevOps</h3>
-        <ul>
-          <li>All development done in <a href="https://github.com/ronenlasnick/Fred_Data_-Repo" target="_blank">GitHub</a></li>
-          <li>Pull request workflow for every milestone (e.g., semantic model setup, SQL materialization)</li>
-          <li>Clean commit history, modular file structure, Apache 2.0 license</li>
-        </ul>
-
-        <h3>🎯 Key Wins</h3>
-        <ul>
-          <li>⚡ Automated ingestion and refresh with orchestration logic</li>
-          <li>🧠 Custom DAX measures with labeled emojis for storytelling</li>
-          <li>🔎 Zoom-in analysis via filters (date, indicator, measure category)</li>
-        </ul>
-
-        <h3>💬 Contact</h3>
-        <p>Want to learn more about the pipeline or replicate it? <a href="mailto:ronen@ha-makolet.co.il">Let’s talk</a>.</p>
-      </div>
-    </section>
-  </div>
-
-  <footer id="footer" class="wrapper alt"><div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div></footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Sidebar -->
+<section id="sidebar">
+<div class="inner">
+<nav>
+<ul>
+<li><a href="#intro">Welcome</a></li>
+<li><a href="#one">My Expertise</a></li>
+<li><a href="#two">My Approach</a></li>
+<li><a href="#contact">Get in touch</a></li>
+</ul>
+</nav>
+</div>
+</section>
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Intro -->
+<section class="wrapper style1 fullscreen fade-up" id="intro">
+<div class="inner">
+<h1>Ronen Lesnick</h1>
+<p>I turn complex data into clear, actionable stories that help teams build better products, sharper strategy, and measurable results.</p>
+<p>Scroll down to explore live projects and see insight in action.</p>
+<ul class="actions">
+<li><a class="button scrolly" href="#one">Learn more</a></li>
+</ul>
+</div>
+</section>
+<!-- Projects -->
+<section class="wrapper style2 spotlights" id="one">
+<section>
+<a class="image" href="#"><img alt="FRED Dashboard" data-position="center center" src="images/png2jpg/0.jpg"/></a>
+<div class="content">
+<div class="inner">
+<h2>Macroeconomic Insights Dashboard</h2>
+<p>ETL + BI pipeline using Databricks, Delta Lake, and Power BI to visualize real-time inflation, unemployment, retail activity, and GDP trends with custom-labeled KPIs.</p>
+<ul class="actions">
+<li><a class="button" href="fred_macro_dashboard.html">Learn more</a></li>
+<li><a class="button live" href="fred_macro_dashboard.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'FRED'})">LIVE Power BI</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<a class="image" href="#"><img alt="" data-position="center center" src="images/png2jpg/1.jpg"/></a>
+<div class="content">
+<div class="inner">
+<h2>In-Depth Consumer Analysis</h2>
+<p>Comprehensive e‑commerce behaviour analytics (Nov 2019 – Apr 2020) that surface cart‑abandon hotspots and seasonal demand shifts.</p>
+<ul class="actions">
+<li><a class="button" href="generic.html">Learn more</a></li>
+<li><a class="button live" href="generic.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Ecommerce'})">LIVE Power BI</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<a class="image" href="#"><img alt="" data-position="top center" src="images/png2jpg/2.jpg"/></a>
+<div class="content">
+<div class="inner">
+<h2>Performance Dashboard for Plant Co.</h2>
+<p>Interactive BI that tracks GP%, sales fluctuations, and highlights under‑performing regions to realign strategy.</p>
+<ul class="actions">
+<li><a class="button" href="generic copy.html">Learn more</a></li>
+<li><a class="button live" href="generic copy.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'PlantCo'})">LIVE Power BI</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<a class="image" href="#"><img alt="" data-position="25% 25%" src="images/png2jpg/3.jpg"/></a>
+<div class="content">
+<div class="inner">
+<h2>ModelQuest Dashboard</h2>
+<p>Power BI exploration of AI‑model evolution—training hours, launch years, and performance leaps—all in one interactive view.</p>
+<ul class="actions">
+<li><a class="button" href="generic copy 2.html">Learn more</a></li>
+<li><a class="button live" href="generic copy 2.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'ModelQuest'})">LIVE Power BI</a></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<!-- Additional project -->
+<section class="wrapper style2 spotlights" id="projects2">
+<section>
+<a class="image" href="#"><img alt="" data-position="center center" src="images/png2jpg/4.jpg"/></a>
+<div class="content">
+<div class="inner">
+<h2>Global Cyber Incident Insights Dashboard</h2>
+<p>Power BI dashboard turning 9 years of threat data into 24/7 situational awareness for SecOps teams.</p>
+<ul class="actions">
+<li><a class="button" href="generic copy 3.html">Learn more</a></li>
+<li><a class="button live" href="generic copy 3.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Cyber'})">LIVE Power BI</a></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<!-- My Approach (kept as‑is) -->
+<section class="wrapper style3 fade-up" id="two">
+<div class="inner">
+<h2>My Approach</h2>
+<p>I combine rigorous analytics with business context, moving from raw data to decisions that improve revenue, cost, and user‑experience.</p>
+<div class="features">
+<section>
+<span class="icon solid major fa-database"></span>
+<h3>Data Engineering</h3>
+<p>Design cloud ETL pipelines (Airflow · dbt · Snowflake) that deliver trusted, timely data.</p>
+</section>
+<section>
+<span class="icon solid major fa-chart-bar"></span>
+<h3>Advanced Analysis</h3>
+<p>Unlock insights with SQL window functions and Python ML where it adds value.</p>
+</section>
+<section>
+<span class="icon solid major fa-eye"></span>
+<h3>Compelling Visuals</h3>
+<p>Craft Tableau / Power BI stories that move leadership from data to decision.</p>
+</section>
+<section>
+<span class="icon solid major fa-gem"></span>
+<h3>Business Intelligence</h3>
+<p>Build KPI frameworks that align analytics with revenue and retention goals.</p>
+</section>
+<section>
+<span class="icon solid major fa-users"></span>
+<h3>Stakeholder Collaboration</h3>
+<p>Translate needs into technical specs and iterate quickly on feedback.</p>
+</section>
+<section>
+<span class="icon solid major fa-sync-alt"></span>
+<h3>Continuous Optimisation</h3>
+<p>Measure, learn, and improve to keep pipelines fast and insights relevant.</p>
+</section>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="wrapper style1 fade-up" id="contact">
+<div class="inner">
+<h2>Get in touch</h2>
+<p>Ready to upgrade your BI? Let’s chat.</p>
+<ul class="contact">
+<li>
+<h3>Email</h3>
+<a href="mailto:ronen@Ha-makolet.co.il">ronen@Ha-makolet.co.il</a>
+</li>
+<li>
+<h3>Phone</h3>
+<span>+972‑52‑563‑5971</span>
+</li>
+<li>
+<h3>Social</h3>
+<ul class="icons">
+<li><a class="icon brands fa-github" href="https://github.com/ronenlasnick"><span class="label">GitHub</span></a></li>
+<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/ronen-lesnick"><span class="label">LinkedIn</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="wrapper style1-alt" id="footer">
+<div class="inner">
+<ul class="menu">
+<li>© Ronen Lesnick. All rights reserved.</li>
+</ul>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

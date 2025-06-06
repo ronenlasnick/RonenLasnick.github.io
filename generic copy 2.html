@@ -4,30 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ModelQuest – AI Model Evolution Dashboard | Ronen Lesnick</title>
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
-  <!-- End GTM -->
-
-  <!-- Responsive Embed helper -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';
+  j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
   <style>
-    .responsive-container{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;}
-    .responsive-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
-    @media(max-width:768px){.responsive-container{padding-bottom:75%;}}
+    .responsive-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+    .responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    @media(max-width:768px) { .responsive-container { padding-bottom: 75%; } }
   </style>
 </head>
-
 <body class="is-preload">
-  <!-- GTM noscript -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-  <!-- Header -->
   <header id="header">
-    <a href="index.html" class="title">ModelQuest</a>
+    <a href="index.html" class="title">ModelQuest — AI Model Evolution Dashboard</a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -35,45 +27,42 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Wrapper -->
   <div id="wrapper">
     <section id="main" class="wrapper">
       <div class="inner">
         <h1 class="major">ModelQuest — AI Model Evolution Dashboard</h1>
 
-        <!-- live demo first -->
-        <h2 id="live-demo" class="visually-hidden">Interactive dashboard</h2>
+        <h2 id="live-demo" style="margin-top:0">Interactive Power BI Dashboard</h2>
         <div class="responsive-container">
           <iframe title="AI Insight Dashboard: Model Training Analysis" src="https://app.powerbi.com/view?r=eyJrIjoiYjJhZDNhOTEtMjk4Yi00ZGJjLTlkYzUtMDM5MDRhMTAzMmY3IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
         </div>
 
-        <!-- Recruiter‑focused intro -->
-        <p><strong>Why it matters:</strong> This Power BI dashboard tracks <em>15 years of AI‑model releases</em>, mapping training hours, parameter counts, and launch cadence to reveal a <strong>5× jump in compute‑efficiency</strong> from 2014‑2024. Product leads use the timeline to benchmark R&D velocity and spot breakthrough years.</p>
+        <h3>🔍 Business Need</h3>
+        <p>AI teams, researchers, and product leads needed a single view of how model development has evolved over time — not just in size, but in training efficiency and performance-to-cost ratio. This dashboard tracks 15+ years of AI model launches to surface hidden trends in compute usage, breakthrough years, and parameter-per-FLOP gains.</p>
 
-        <p><strong>My role:</strong> Sourced model‑metadata CSVs from public leaderboards, normalised them in Python (pandas) and built a semantic model in Power BI with DAX measures for <em>parameter‑per‑FLOP</em> efficiency. Designed a clean, interactive timeline that surfaces :hover tooltips and drill‑through views for any model family.</p>
-
-        <h3>Key insights at a glance</h3>
+        <h3>📌 Key Insights</h3>
         <ul>
-          <li><strong>Launch heat‑map</strong> – shows the sprint of releases in 2023 (⟶ +120 % YoY).</li>
-          <li><strong>Training‑hour vs. performance</strong> bubble plot – outliers flag models punching above their compute budget.</li>
-          <li><strong>Cumulative model count</strong> card – visual proof of the field’s exponential pace.</li>
+          <li><strong>Launch heat‑map</strong> — exposes the 2023 model sprint (+120% YoY volume).</li>
+          <li><strong>Training‑hour vs. performance</strong> bubble plot — reveals over-performers vs. compute-heavy laggards.</li>
+          <li><strong>Cumulative model count</strong> card — shows exponential acceleration across model families.</li>
         </ul>
 
-        <h3>Tech stack</h3>
-        <p>Python • pandas • Power Query • DAX • Power BI</p>
+        <h3>🧱 Tech Stack</h3>
+        <p>Python · pandas · Power Query · DAX · Power BI</p>
 
-        <p>This project demonstrates data‑wrangling agility and visual storytelling—skills I’d bring to any role that needs to turn raw metrics into strategy‑shaping insight.</p>
+        <h3>📂 Dataset Info</h3>
+        <p class="small">Curated from public leaderboards and GitHub model metadata · 200+ AI models · Tracked over 15 years · Normalized by training hours, parameters, and compute efficiency</p>
+
+        <h3>💻 My Role</h3>
+        <p>I sourced and normalized raw model metadata, engineered a semantic Power BI model with DAX for training efficiency (parameters-per-FLOP), and designed an interactive timeline and :hover visualizations that let users drill into any model family in seconds.</p>
+
+        <p>This project demonstrates my data-wrangling agility and ability to craft insight-rich visual storytelling — skills I’d bring to any role where raw metrics need to become strategy-shaping insight.</p>
       </div>
     </section>
   </div>
-
-  <!-- Footer -->
   <footer id="footer" class="wrapper alt">
     <div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div>
   </footer>
-
-  <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrollex.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>

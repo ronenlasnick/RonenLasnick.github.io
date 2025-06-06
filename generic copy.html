@@ -4,72 +4,67 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Plant Co. Sales Performance Dashboard | Ronen Lesnick</title>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css" />
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
-  <!-- End GTM -->
-
-  <!-- Responsive Embed helper -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+  j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
   <style>
-    .responsive-container{position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;}
-    .responsive-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
-    @media(max-width:768px){.responsive-container{padding-bottom:75%;}}
+    .responsive-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; }
+    .responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    @media(max-width:768px) { .responsive-container { padding-bottom: 75%; } }
   </style>
 </head>
 <body class="is-preload">
-  <!-- GTM noscript -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header id="header">
+  <a href="index.html" class="title">Plant Co. Sales Performance Dashboard</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plant.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+</header>
+<div id="wrapper">
+  <section id="main" class="wrapper">
+    <div class="inner">
+      <h1 class="major">Plant Co. Sales Performance Dashboard</h1>
 
-  <!-- Header -->
-  <header id="header">
-    <a href="index.html" class="title">Plant Co.</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="plant.html" class="active">Project</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Main -->
-    <section id="main" class="wrapper">
-      <div class="inner">
-        <h1 class="major">Plant Co. Sales Performance Dashboard</h1>
-
-        <!-- Live demo directly under the headline -->
-        <div id="live-demo" class="responsive-container">
-          <iframe title="Plant Co. Power BI Dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiMzM1ODg5ZDAtNmMyOS00MTAzLWJhODAtZjMzMjEwNGZjNmI5IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
-        </div>
-
-        <p><strong>Why it matters:</strong> This end‑to‑end Power&nbsp;BI solution turns <em>2.4&nbsp;million sales rows</em> into a single pane‑of‑glass for executives. Dynamic KPIs compare <abbr title="Year‑to‑Date">YTD</abbr> vs. <abbr title="Previous Year‑to‑Date">PYTD</abbr> trends, a monthly waterfall pinpoints profit swings, and segmentation by GP&nbsp;% × volume surfaces low‑margin outliers.</p>
-
-        <p><strong>Business impact:</strong> The dashboard revealed a <span style="white-space:nowrap">−138&nbsp;K&nbsp;₪</span> gross‑profit gap concentrated in Poland &amp; China, prompting a pricing realignment that improved quarterly GP <strong>+7&nbsp;%</strong>. Stakeholders now track performance in real time instead of waiting on end‑of‑month Excel dumps.</p>
-
-        <p><strong>My contribution:</strong> Data modelling in Power&nbsp;Query, DAX measures for YTD vs. PYTD, custom waterfall chart, and UX polish for exec‑level clarity. Result: a shareable link powering cross‑country stand‑ups and budget reviews.</p>
-
-        <p><em>Tech stack:</em> Excel CSV ➝ Power Query ➝ DAX ➝ Power BI Service (publish &amp; share).</p>
+      <h2 id="live-demo" style="margin-top:0">Interactive Power BI Dashboard</h2>
+      <div class="responsive-container">
+        <iframe title="Plant Co. Power BI Dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiMzM1ODg5ZDAtNmMyOS00MTAzLWJhODAtZjMzMjEwNGZjNmI5IiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
       </div>
-    </section>
+
+      <h3>🔍 Business Need</h3>
+      <p>Executives and regional managers at Plant Co. needed a single source of truth for tracking gross profit, performance by region, and product group margins. Instead of relying on end-of-month Excel reports, they wanted real-time access to sales fluctuations, underperforming segments, and YTD vs. PYTD comparisons.</p>
+
+      <h3>📌 Key Wins</h3>
+      <ul>
+        <li>Pinpointed <strong>−138 K ₪</strong> gross profit gap in Poland & China → pricing strategy realignment.</li>
+        <li>Custom monthly waterfall visualized regional fluctuations in profit contribution.</li>
+        <li>7 % quarterly GP increase after rollout; now used in recurring cross-country stand-ups.</li>
+      </ul>
+
+      <h3>🧱 Tech Stack</h3>
+      <p>Excel CSV ➝ Power Query for transformation ➝ DAX for KPIs and measures ➝ Power BI Service for publishing and sharing.</p>
+
+      <h3>📂 Dataset Info</h3>
+      <p class="small">2.4 million sales rows • Country and product-level granularity • Monthly and quarterly comparisons</p>
+    </div>
+  </section>
+</div>
+<footer id="footer" class="wrapper alt">
+  <div class="inner">
+    <ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul>
   </div>
-
-  <!-- Footer -->
-  <footer id="footer" class="wrapper alt">
-    <div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

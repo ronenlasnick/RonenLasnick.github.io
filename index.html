@@ -9,27 +9,23 @@
 <link href="assets/css/main.css" rel="stylesheet"/>
 <!-- Inline tweaks for LIVE button -->
 <style>
-    /* accent colour for the LIVE demo button */
     a.button.live{
-      background:#D97706; /* amber‑600 */
+      background:#D97706;
       color:#ffffff !important;
       transition:background 0.18s;
     }
     a.button.live:hover{background:#B45309}
-    /* mobile stacking */
     @media(max-width:420px){
       ul.actions .button{display:block;margin:0 0 .6rem 0;}
     }
-  </style>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
-<!-- End Google Tag Manager -->
+</style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
 </head>
 <body class="is-preload">
-<!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Sidebar -->
 <section id="sidebar">
 <div class="inner">
 <nav>
@@ -42,9 +38,7 @@
 </nav>
 </div>
 </section>
-<!-- Wrapper -->
 <div id="wrapper">
-<!-- Intro -->
 <section class="wrapper style1 fullscreen fade-up" id="intro">
 <div class="inner">
 <h1>Ronen Lesnick</h1>
@@ -55,9 +49,7 @@
 </ul>
 </div>
 </section>
-<!-- Projects -->
 <section class="wrapper style2 spotlights" id="one">
-
 <section>
 <a class="image" href="#"><img alt="FRED Dashboard" data-position="center center" src="images/png2jpg/0.jpg"/></a>
 <div class="content">
@@ -67,6 +59,19 @@
 <ul class="actions">
 <li><a class="button" href="fred_macro_dashboard.html">Learn more</a></li>
 <li><a class="button live" href="fred_macro_dashboard.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'FRED'})">LIVE Power BI</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<a class="image" href="#"><img alt="" data-position="center center" src="images/png2jpg/4.jpg"/></a>
+<div class="content">
+<div class="inner">
+<h2>Global Cyber Incident Insights Dashboard</h2>
+<p>Power BI dashboard turning 9 years of threat data into 24/7 situational awareness for SecOps teams.</p>
+<ul class="actions">
+<li><a class="button" href="generic copy 3.html">Learn more</a></li>
+<li><a class="button live" href="generic copy 3.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Cyber'})">LIVE Power BI</a></li>
 </ul>
 </div>
 </div>
@@ -111,87 +116,35 @@
 </div>
 </section>
 </section>
-<!-- Additional project -->
-<section class="wrapper style2 spotlights" id="projects2">
-<section>
-<a class="image" href="#"><img alt="" data-position="center center" src="images/png2jpg/4.jpg"/></a>
-<div class="content">
-<div class="inner">
-<h2>Global Cyber Incident Insights Dashboard</h2>
-<p>Power BI dashboard turning 9 years of threat data into 24/7 situational awareness for SecOps teams.</p>
-<ul class="actions">
-<li><a class="button" href="generic copy 3.html">Learn more</a></li>
-<li><a class="button live" href="generic copy 3.html#live-demo" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Cyber'})">LIVE Power BI</a></li>
-</ul>
-</div>
-</div>
-</section>
-</section>
-<!-- My Approach (kept as‑is) -->
 <section class="wrapper style3 fade-up" id="two">
 <div class="inner">
 <h2>My Approach</h2>
 <p>I combine rigorous analytics with business context, moving from raw data to decisions that improve revenue, cost, and user‑experience.</p>
 <div class="features">
-<section>
-<span class="icon solid major fa-database"></span>
-<h3>Data Engineering</h3>
-<p>Design cloud ETL pipelines (Airflow · dbt · Snowflake) that deliver trusted, timely data.</p>
-</section>
-<section>
-<span class="icon solid major fa-chart-bar"></span>
-<h3>Advanced Analysis</h3>
-<p>Unlock insights with SQL window functions and Python ML where it adds value.</p>
-</section>
-<section>
-<span class="icon solid major fa-eye"></span>
-<h3>Compelling Visuals</h3>
-<p>Craft Tableau / Power BI stories that move leadership from data to decision.</p>
-</section>
-<section>
-<span class="icon solid major fa-gem"></span>
-<h3>Business Intelligence</h3>
-<p>Build KPI frameworks that align analytics with revenue and retention goals.</p>
-</section>
-<section>
-<span class="icon solid major fa-users"></span>
-<h3>Stakeholder Collaboration</h3>
-<p>Translate needs into technical specs and iterate quickly on feedback.</p>
-</section>
-<section>
-<span class="icon solid major fa-sync-alt"></span>
-<h3>Continuous Optimisation</h3>
-<p>Measure, learn, and improve to keep pipelines fast and insights relevant.</p>
-</section>
+<section><span class="icon solid major fa-database"></span><h3>Data Engineering</h3><p>Design cloud ETL pipelines (Airflow · dbt · Snowflake) that deliver trusted, timely data.</p></section>
+<section><span class="icon solid major fa-chart-bar"></span><h3>Advanced Analysis</h3><p>Unlock insights with SQL window functions and Python ML where it adds value.</p></section>
+<section><span class="icon solid major fa-eye"></span><h3>Compelling Visuals</h3><p>Craft Tableau / Power BI stories that move leadership from data to decision.</p></section>
+<section><span class="icon solid major fa-gem"></span><h3>Business Intelligence</h3><p>Build KPI frameworks that align analytics with revenue and retention goals.</p></section>
+<section><span class="icon solid major fa-users"></span><h3>Stakeholder Collaboration</h3><p>Translate needs into technical specs and iterate quickly on feedback.</p></section>
+<section><span class="icon solid major fa-sync-alt"></span><h3>Continuous Optimisation</h3><p>Measure, learn, and improve to keep pipelines fast and insights relevant.</p></section>
 </div>
 </div>
 </section>
-<!-- Contact -->
 <section class="wrapper style1 fade-up" id="contact">
 <div class="inner">
 <h2>Get in touch</h2>
 <p>Ready to upgrade your BI? Let’s chat.</p>
 <ul class="contact">
-<li>
-<h3>Email</h3>
-<a href="mailto:ronen@Ha-makolet.co.il">ronen@Ha-makolet.co.il</a>
-</li>
-<li>
-<h3>Phone</h3>
-<span>+972‑52‑563‑5971</span>
-</li>
-<li>
-<h3>Social</h3>
-<ul class="icons">
+<li><h3>Email</h3><a href="mailto:ronen@Ha-makolet.co.il">ronen@Ha-makolet.co.il</a></li>
+<li><h3>Phone</h3><span>+972‑52‑563‑5971</span></li>
+<li><h3>Social</h3><ul class="icons">
 <li><a class="icon brands fa-github" href="https://github.com/ronenlasnick"><span class="label">GitHub</span></a></li>
 <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/ronen-lesnick"><span class="label">LinkedIn</span></a></li>
-</ul>
-</li>
+</ul></li>
 </ul>
 </div>
 </section>
 </div>
-<!-- Footer -->
 <footer class="wrapper style1-alt" id="footer">
 <div class="inner">
 <ul class="menu">
@@ -199,7 +152,6 @@
 </ul>
 </div>
 </footer>
-<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>

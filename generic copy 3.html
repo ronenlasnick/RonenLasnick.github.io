@@ -4,78 +4,63 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Global Cyber‑Incident Dashboard | Ronen Lesnick</title>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css" />
-
-  <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?('&l='+l):'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
-
-  <!-- Responsive Embed CSS -->
   <style>
-    .responsive-container{position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden;}
-    .responsive-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
-    @media(max-width:768px){.responsive-container{padding-bottom:75%;}}
+    .responsive-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; }
+    .responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    @media(max-width:768px) { .responsive-container { padding-bottom: 75%; } }
   </style>
 </head>
-
 <body class="is-preload">
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header id="header">
+  <a href="index.html" class="title">Global Cyber‑Incident Insights Dashboard</a>
+  <nav><ul><li><a href="index.html">Home</a></li><li><a href="#" class="active">Project</a></li></ul></nav>
+</header>
+<div id="wrapper">
+  <section id="main" class="wrapper">
+    <div class="inner">
+      <h1 class="major">Global Cyber‑Incident Insights Dashboard</h1>
 
-  <!-- Header -->
-  <header id="header">
-    <a href="index.html" class="title">Cyber‑Incident Insights</a>
-    <nav><ul><li><a href="index.html">Home</a></li><li><a href="#" class="active">Project</a></li></ul></nav>
-  </header>
-
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <section id="main" class="wrapper">
-      <div class="inner">
-        <h1 class="major">Global Cyber‑Incident Insights Dashboard</h1>
-
-        <!-- LIVE demo directly under headline -->
-        <h2 id="live-demo" style="margin-top:0">Interactive dashboard</h2>
-        <div class="responsive-container">
-          <iframe title="cyber_data_etl_pipeline" src="https://app.powerbi.com/view?r=eyJrIjoiNTdhOTg4M2QtM2I2NC00MTNlLWE2ZGItOWM3ODlhMDAxZGRlIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
-        </div>
-
-        <p><strong>Why it matters:</strong> This dashboard distills <em>3 GB/day</em> of global breach reports into actionable intelligence, letting security leads spot high‑loss vectors, monitor exploit trends, and benchmark defence ROI — all in real time.</p>
-
-        <h3>Key wins</h3>
-        <ul>
-          <li><strong>–138 M $ saved</strong> potential exposure flagged by isolating the top 5 zero‑day exploit patterns.</li>
-          <li><strong>60 % faster</strong> incident triage thanks to interactive risk heat‑map & drill‑through.
-          </li>
-          <li><strong>24/7 refresh</strong> via automated Airflow → Snowflake pipeline (99.8 % SLA).</li>
-        </ul>
-
-        <h3>Tech stack</h3>
-        <p>Apache Airflow · Python (pandas, pyarrow) · AWS S3 · Snowflake · Power BI (Fabric) · DAX</p>
-
-        <h3>Behind the scenes</h3>
-        <ul>
-          <li><strong>Automated ingest:</strong> Airflow DAG pulls raw CSVs from Kaggle, validates schema, pushes to S3.</li>
-          <li><strong>Transform & load:</strong> Python cleanses → staged in Snowflake, partitioned by year & country.</li>
-          <li><strong>BI layer:</strong> Power BI semantic model with incremental refresh; role‑level security by region.
-          </li>
-        </ul>
-
-        <p style="margin-top:2rem">Questions about methodology or results? <a href="mailto:ronen@ha-makolet.co.il">Let’s talk</a>.</p>
+      <h2 id="live-demo" style="margin-top:0">Interactive Power BI Dashboard</h2>
+      <div class="responsive-container">
+        <iframe title="cyber_data_etl_pipeline" src="https://app.powerbi.com/view?r=eyJrIjoiNTdhOTg4M2QtM2I2NC00MTNlLWE2ZGItOWM3ODlhMDAxZGRlIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
       </div>
-    </section>
-  </div>
 
-  <!-- Footer -->
-  <footer id="footer" class="wrapper alt"><div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div></footer>
+      <h3>🔍 Business Need</h3>
+      <p>Cybersecurity executives and SecOps teams needed real-time insight into breach trends, loss exposure, and exploit activity. This dashboard transforms global breach data into continuous intelligence to support faster triage, incident prioritization, and ROI tracking on cyber defense investments.</p>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+      <h3>📌 Key Wins</h3>
+      <ul>
+        <li><strong>–138 M $ saved</strong> in potential exposure by isolating top 5 zero-day exploit patterns.</li>
+        <li><strong>60 % faster</strong> incident triage through risk heatmap and regional drill-through.</li>
+        <li><strong>24/7 refresh</strong> via automated pipeline; monitored under a 99.8 % SLA.</li>
+      </ul>
+
+      <h3>🧱 Tech Stack</h3>
+      <p>Apache Airflow · Python (pandas, pyarrow) · AWS S3 · Snowflake · Power BI (Fabric) · DAX</p>
+
+      <h3>⚙️ Architecture Overview</h3>
+      <ul>
+        <li><strong>Ingest:</strong> Airflow DAGs extract raw CSVs from Kaggle, validate schema, and store them in S3.</li>
+        <li><strong>Transform & Load:</strong> Python scripts clean data → partitioned and staged in Snowflake by year and country.</li>
+        <li><strong>Delivery:</strong> Power BI semantic model with incremental refresh and RLS by region.</li>
+      </ul>
+
+      <p style="margin-top:2rem">Questions about methodology or results? <a href="mailto:ronen@ha-makolet.co.il">Let’s talk</a>.</p>
+    </div>
+  </section>
+</div>
+<footer id="footer" class="wrapper alt">
+  <div class="inner"><ul class="menu"><li>&copy; Ronen Lesnick. All rights reserved.</li></ul></div>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Federal Reserve Economic Data | Dashboard | Ronen Lesnick</title>
+  <title>Federal Reserve Economic Data | Dashboards | Ronen Lesnick</title>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -50,18 +50,23 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <header id="header">
-    <a href="index.html" class="title">Federal Reserve Of St. Louis Dashboard's</a>
+    <a href="index.html" class="title">Federal Reserve Of St. Louis Dashboards</a>
     <nav><ul><li><a href="index.html">Home</a></li><li><a href="#" class="active">Project</a></li></ul></nav>
   </header>
 
   <div id="wrapper">
     <section id="main" class="wrapper">
       <div class="inner">
-        <h1 class="major">Federal Reserve Economic Data - Powered Macroeconomic Insights Dashboard</h1>
+        <h1 class="major">Federal Reserve Economic Data – Powered Macroeconomic Insights Dashboard</h1>
 
-        <h2 id="live-demo" style="margin-top:0">Interactive 3 - Page Power BI Dashboard's</h2>
+        <h2 id="live-demo" style="margin-top:0">Interactive 3‑Page Power BI Dashboards</h2>
         <div class="responsive-container">
-          <iframe title="FRED_ETL_Orchestrator_Daily_Monthly_Quarterly" src="https://app.powerbi.com/view?r=eyJrIjoiNDdiNGIwY2QtNjQwMC00YzI2LTk0NjUtMGQwMDdjMzE2MGEzIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
+          <iframe 
+            title="FRED_ETL_Orchestrator_Daily_Monthly_Quarterly"
+            aria-label="Federal Reserve Economic Dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNDdiNGIwY2QtNjQwMC00YzI2LTk0NjUtMGQwMDdjMzE2MGEzIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" 
+            allowfullscreen>
+          </iframe>
         </div>
 
         <p><strong>Why it matters:</strong> This full-stack ETL and analytics pipeline empowers stakeholders with a near-real-time view of key U.S. economic indicators like inflation, GDP, home prices, unemployment, and retail growth. Designed for decision-makers, hiring managers, and general economics enthusiasts.</p>
@@ -80,26 +85,10 @@
           <li><strong>CI/CD:</strong> Pull request workflow with tracked commits on <a href="https://github.com/ronenlasnick/Fred_Data_-Repo" target="_blank">GitHub</a></li>
         </ul>
 
-        <h3>📌 Sample Python (from 01_fred_daily_pipeline.ipynb)</h3>
-        <pre class="codeblock">
-import requests
-from pyspark.sql.functions import lit
-
-response = requests.get("https://api.stlouisfed.org/fred/series/observations", params=params)
-raw_df = spark.read.json(sc.parallelize([response.json()['observations']]))
-data_df = raw_df.withColumn("indicator", lit("FederalFundsRate"))
-        </pre>
 
         <h3>🧠 Economic Health Score (Z-Score Normalized DAX)</h3>
-        <pre class="codeblock">
-Econ_Health_Score_4Factor =
-VAR Z_GDP   = ( GDP - AVG(GDP) ) / STDEV(GDP)
-VAR Z_Prof  = ( Profits - AVG(Profits) ) / STDEV(Profits)
-VAR Z_CPI   = ( CPI - AVG(CPI) ) / STDEV(CPI)
-VAR Z_Unemp = ( Unemp - AVG(Unemp) ) / STDEV(Unemp)
-RETURN
-( Z_GDP + Z_Prof - Z_CPI - Z_Unemp ) / 4
-        </pre>
+        <img src="images/git_prs.png" alt="Econ Health Score Screenshot" style="max-width:100%; margin:1em 0;" />
+        <img src="images/git_commits.png" alt="4-Factor Econ Health Score" style="max-width:100%; margin:1em 0;" />
         <p>This DAX measure quantifies “macro health” on a normalized scale. Higher values = better conditions (GDP ↑, Profits ↑, CPI ↓, Unemployment ↓).</p>
 
         <h3>📂 GitHub & DevOps</h3>
@@ -108,6 +97,8 @@ RETURN
           <li>Pull request workflow for every milestone (e.g., semantic model setup, SQL materialization)</li>
           <li>Clean commit history, modular file structure, Apache 2.0 license</li>
         </ul>
+        <img src="images/fred_kpi_labels.png" alt="GitHub commit log" style="max-width:100%; margin:1em 0;" />
+        <img src="images/fred_dashboard.png" alt="GitHub pull requests" style="max-width:100%; margin:1em 0;" />
 
         <h3>🎯 Key Wins</h3>
         <ul>
@@ -118,6 +109,7 @@ RETURN
 
         <h3>💬 Contact</h3>
         <p>Want to learn more about the pipeline or replicate it? <a href="mailto:ronen@ha-makolet.co.il">Let’s talk</a>.</p>
+        <p><strong>Full code and documentation available on GitHub:</strong> <a href="https://github.com/ronenlasnick/Fred_Data_-Repo" target="_blank">https://github.com/ronenlasnick/Fred_Data_-Repo</a></p>
       </div>
     </section>
   </div>

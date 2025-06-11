@@ -10,6 +10,7 @@
     .responsive-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; }
     .responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     @media(max-width:768px) { .responsive-container { padding-bottom: 75%; } }
+    .note { font-size: 0.8em; color: #888; margin-top: 0.2em; }
   </style>
 </head>
 <body class="is-preload">
@@ -27,25 +28,26 @@
       <h1 class="major">E‑commerce Behaviour Dashboard</h1>
 
       <h2 id="live-demo" style="margin-top:0">Interactive Power BI Dashboard</h2>
+      <p class="note">*This dashboard is over 8.8 GB and may take up to 5 minutes to load depending on your internet speed and Power BI traffic.</p>
       <div class="responsive-container">
-        <iframe title="E‑commerce consumer behaviour dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlYzFlNjMtYzBjZS00YmI4LTkzNzYtMTlkNTNjNDExOTBmIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" allowfullscreen></iframe>
+        <iframe title="E-commerce consumer behavior project (Without user_session)" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmNlYzFlNjMtYzBjZS00YmI4LTkzNzYtMTlkNTNjNDExOTBmIiwidCI6IjVlYTllZmMyLTYzN2ItNGJmMy1hOTc3LTUwZmZhZWI4ZmU2ZiJ9" frameborder="0" allowfullscreen="true"></iframe>
       </div>
 
       <h3>🔍 Business Need</h3>
-      <p>Retail teams often lack clear, real-time visibility into what drives abandoned carts, seasonal demand spikes, or brand-level performance. This dashboard turns 135M rows of clickstream and transaction data into clear visual insights decision-makers can act on fast.</p>
+      <p>Retailers often struggle to identify patterns in user navigation, cart abandonment, and peak demand. This dashboard transforms over 135M behavioral data rows into actionable insights, empowering leaders to optimize merchandising, promotions, and product availability in real time.</p>
 
       <h3>📌 Key Wins</h3>
       <ul>
-        <li>Identified high‑margin items with <em>≥15 %</em> conversion uplift potential → informed targeted promo plan.</li>
-        <li>Flagged low‑stock SKUs driving <em>‑7 %</em> weekly lost sales → fed to replenishment pipeline.</li>
-        <li>Drill‑through filters by brand and category reduced SQL-based ad-hoc requests by ~6 hrs/week.</li>
+        <li>Flagged understocked SKUs linked to −7 % weekly lost revenue → sent to auto-replenishment flow.</li>
+        <li>Highlighted high‑margin items with ≥15 % conversion boost potential → guided targeted campaigns.</li>
+        <li>Built advanced brand/category filters → eliminated ~6 hrs/week of repetitive ad hoc SQL analysis.</li>
       </ul>
 
       <h3>🧱 Tech Stack</h3>
-      <p>Python (pandas · pyarrow) for cleaning & optimization → Power Query → Power BI for interactive storytelling.</p>
+      <p>Python (pandas · pyarrow) for ETL → Power Query for modeling → Power BI for visualization and interactivity.</p>
 
       <h3>📂 Dataset Info</h3>
-      <p class="small">REES46 e‑commerce behaviour dataset (Kaggle) · 135M rows · 14 columns · Oct 2019 – Apr 2020 · Size: 57 GB</p>
+      <p class="small">REES46 e‑commerce behavior dataset (Kaggle) · 135M rows · 14 columns · Oct 2019 – Apr 2020 · Raw size: 57 GB · Power BI file: 8.8 GB</p>
     </div>
   </section>
 </div>

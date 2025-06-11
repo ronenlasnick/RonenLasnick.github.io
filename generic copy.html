@@ -13,6 +13,7 @@
     .responsive-container { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; }
     .responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     @media(max-width:768px) { .responsive-container { padding-bottom: 75%; } }
+    .small-note { font-size: 0.85em; color: #bbb; margin-top: 0.5em; display: block; }
   </style>
 </head>
 <body class="is-preload">
@@ -37,20 +38,21 @@
       </div>
 
       <h3>🔍 Business Need</h3>
-      <p>Executives and regional managers at Plant Co. needed a single source of truth for tracking gross profit, performance by region, and product group margins. Instead of relying on end-of-month Excel reports, they wanted real-time access to sales fluctuations, underperforming segments, and YTD vs. PYTD comparisons.</p>
+      <p>Plant Co. needed actionable visibility into sales performance across products and regions, especially to uncover profit gaps, seasonal trends, and account-level underperformance. Decision-makers were using disconnected Excel files—this project centralized the intelligence and made it interactive.</p>
 
       <h3>📌 Key Wins</h3>
       <ul>
-        <li>Pinpointed <strong>−138 K ₪</strong> gross profit gap in Poland & China → pricing strategy realignment.</li>
-        <li>Custom monthly waterfall visualized regional fluctuations in profit contribution.</li>
-        <li>7 % quarterly GP increase after rollout; now used in recurring cross-country stand-ups.</li>
+        <li>Highlighted negative <strong>−512K ₪</strong> YTD vs. PYTD sales drop and isolated the largest contributors: China, Sweden, and France.</li>
+        <li>Used dynamic waterfall and scatter visuals to analyze regional swings and profit margin segments.</li>
+        <li>Introduced GP% segmentation dashboard to help sales leads focus on strategic, high-margin product groups.</li>
+        <li>Dashboard adopted in monthly board reviews and weekly cross-regional sales calls—driving 7 % GP recovery in Q4.</li>
       </ul>
 
       <h3>🧱 Tech Stack</h3>
-      <p>Excel CSV ➝ Power Query for transformation ➝ DAX for KPIs and measures ➝ Power BI Service for publishing and sharing.</p>
+      <p>Excel CSV exports ➝ Power Query (cleaning, reshaping) ➝ DAX (time intelligence + KPI logic) ➝ Power BI Pro Service for delivery.</p>
 
       <h3>📂 Dataset Info</h3>
-      <p class="small">2.4 million sales rows • Country and product-level granularity • Monthly and quarterly comparisons</p>
+      <p class="small">2.4M sales records • Monthly granularity • Multi-country data • Product-level margin, GP%, and trend indicators</p>
     </div>
   </section>
 </div>

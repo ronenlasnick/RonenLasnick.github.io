@@ -37,4 +37,4 @@ This site showcases my hands-on experience and projects in:
 ## 📬 Contact
 
 Got questions or want to collaborate?  
-Reach out via **[ronen@ha-makolet.co.il](mailto:ronen@ha-makolet.co.il)**.
+Reach out via **[ronenlasnick@icloud.com](mailto:ronenlasnick@icloud.com)**.

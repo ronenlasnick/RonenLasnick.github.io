@@ -1,40 +1,28 @@
-# 🧠 Ronen Lesnick – Data Portfolio
+# Ronen Lesnick - Data Engineering Portfolio
 
-Welcome to my personal portfolio website, proudly hosted on GitHub Pages at [ronenlasnick.github.io](https://ronenlasnick.github.io).
+Personal portfolio hosted on GitHub Pages: [ronenlasnick.github.io](https://ronenlasnick.github.io).
 
-This site showcases my hands-on experience and projects in:
+This site presents data engineering, analytics engineering, and BI case studies built from public or simulated datasets. The focus is on practical delivery: ingestion, modeling, DAX/SQL logic, and live Power BI dashboards.
 
-- 📊 Data Analysis  
-- 📈 Business Intelligence  
-- 🧮 SQL, Python, and Power BI  
-- 🌐 Web-based dashboards  
-- ☁️ Cloud-based data pipelines (AWS, Snowflake, Airflow)  
+## Featured Projects
 
----
-
-## 🚀 Live Projects
-
-| Project Title | Description |
+| Project | Focus |
 | --- | --- |
-| **In-Depth Consumer Analysis** | Behavioral insights from a 57GB multi-category e-commerce dataset (REES46) using Power BI. |
-| **Plant Co. Financial Dashboard** | Gross profit and financial trends visualization for a simulated business case. |
-| **ModelQuest: AI Model Training Trends** | Analysis of model training hours, accessibility, and evolution across top AI companies. |
-| **Cyber Incident Insights Dashboard** | End-to-end ETL pipeline (Airflow → S3 → Snowflake → Power BI) for cyber threat analytics. |
-| **US Macro Economic Insights** | Full-stack data engineering pipeline built with Databricks, Delta Lake, and Power BI to transform FRED macroeconomic data into interactive dashboards. [📄 GitHub](https://github.com/ronenlasnick/Fred_Data_-Repo) |
+| **Macroeconomic Insights Pipeline** | FRED API data pipeline with Databricks, Spark, Delta Lake, dimensional modeling, Power BI, and public GitHub evidence. |
+| **Cyber Incident Analytics Model** | Public-data security analytics case study using cloud-ingestion and Snowflake/dbt-style modeling concepts. |
+| **E-Commerce Behavior Dashboard** | REES46 public behavior dataset exploration with Python, Power Query, and Power BI. |
+| **Plant Co. Sales Performance** | Simulated sales and gross-profit dashboard using Power Query, DAX time intelligence, and executive BI design. |
+| **ModelQuest AI Model Trends** | Public AI model metadata transformed into a Power BI trend dashboard. |
 
----
+## Technologies Represented
 
-## 🛠️ Technologies Used
+- **Languages:** Python, SQL, HTML/CSS, JavaScript
+- **Data and Analytics:** Power BI, DAX, Power Query, Databricks, Spark, Delta Lake
+- **Cloud and Warehouse Patterns:** AWS S3, Azure, Snowflake
+- **Orchestration and Delivery:** Airflow patterns, GitHub, GitHub Pages
 
-- **Languages:** Python, SQL, HTML/CSS, JavaScript  
-- **Data & Analytics:** Power BI, Databricks, Apache Spark, Delta Lake  
-- **Cloud Services:** AWS, Azure Blob Storage, Snowflake  
-- **Orchestration:** Airflow, GitHub Actions  
-- **Web Hosting:** GitHub Pages  
+## Contact
 
----
-
-## 📬 Contact
-
-Got questions or want to collaborate?  
-Reach out via **[ronenlasnick@icloud.com](mailto:ronenlasnick@icloud.com)**.
+Email: [ronenlasnick@icloud.com](mailto:ronenlasnick@icloud.com)  
+LinkedIn: [linkedin.com/in/ronen-lesnick](https://www.linkedin.com/in/ronen-lesnick)  
+GitHub: [github.com/ronenlasnick](https://github.com/ronenlasnick)

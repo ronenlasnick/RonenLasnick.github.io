@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Ronen Lesnick's Portfolio - Main</title>
-  <!-- Main Stylesheet -->
-  <link href="assets/css/main.css" rel="stylesheet"/>
-  <!-- Inline tweaks for LIVE button -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ronen Lesnick's data engineering and business intelligence portfolio: ETL pipelines, analytics models, and Power BI reports built from public and simulated datasets." />
+  <meta property="og:title" content="Ronen Lesnick | Data Engineering Portfolio" />
+  <meta property="og:description" content="ETL, analytics engineering, and Power BI case studies with published reports and implementation notes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ronenlasnick.github.io/" />
+  <meta property="og:image" content="https://ronenlasnick.github.io/images/fred_dashboard.png" />
+  <title>Ronen Lesnick | Data Engineering Portfolio</title>
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/portfolio-polish.css" rel="stylesheet" />
   <style>
-    a.button.live{ background:#D97706; color:#ffffff !important; transition:background 0.18s; }
-    a.button.live:hover{ background:#B45309 }
-    @media(max-width:420px){ ul.actions .button{ display:block; margin:0 0 .6rem 0; } }
+    @media(max-width:420px){ ul.actions .button{ margin:0 0 .6rem 0; } }
   </style>
-  <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
     var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
     j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
@@ -22,161 +24,187 @@
 <body class="is-preload">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Sidebar -->
   <section id="sidebar">
     <div class="inner">
       <nav>
         <ul>
-          <li><a href="#intro">Welcome</a></li>
+          <li><a href="#intro">Profile</a></li>
           <li><a href="#one">Projects</a></li>
-          <li><a href="#two">My Approach</a></li>
-          <li><a href="#contact">Get in touch</a></li>
+          <li><a href="#two">Workflow</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </section>
 
   <div id="wrapper">
-
-    <!-- Intro -->
     <section id="intro" class="wrapper style1 fullscreen fade-up">
       <div class="inner">
+        <span class="eyebrow">Data Engineering + Business Intelligence</span>
         <h1>Ronen Lesnick</h1>
-        <p>I turn complex data into clear, actionable stories that help teams build better products, sharper strategy, and measurable results.</p>
-        <p>Scroll down to explore live projects and see insight in action.</p>
+        <p>I build analytics pipelines, semantic models, and decision-ready BI reports from messy operational and public datasets. This portfolio focuses on practical data work: ingestion, modeling, DAX/SQL logic, and Power BI delivery.</p>
+        <ul class="hero-metrics">
+          <li>Python, SQL, Power BI</li>
+          <li>Databricks, Spark, Delta Lake</li>
+          <li>Snowflake, Airflow, AWS, Azure</li>
+          <li>Public and simulated datasets</li>
+        </ul>
         <ul class="actions">
-          <li><a href="#one" class="button scrolly">Learn more</a></li>
+          <li><a href="#one" class="button primary scrolly">View projects</a></li>
+          <li><a href="https://github.com/ronenlasnick" class="button ghost">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ronen-lesnick" class="button ghost">LinkedIn</a></li>
         </ul>
       </div>
     </section>
 
-    <!-- Projects -->
     <section id="one" class="wrapper style2 spotlights">
-      <!-- Macroeconomic -->
       <section>
-        <a href="#" class="image"><img src="images/png2jpg/0.jpg" alt="Macroeconomic Insights Dashboard"/></a>
+        <a href="macroeconomic-insights.html" class="image"><img src="images/generated/macro-thumb.svg" alt="Abstract macroeconomic data pipeline visual" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Macroeconomic Insights Dashboard</h2>
-            <p>Built an end-to-end ETL pipeline on Databricks & Delta Lake, delivering daily refreshed Power BI dashboards tracking 10+ macroeconomic indicators (inflation, unemployment, GDP, retail sales). This solution reduced forecast errors by 15% and empowered executives with real-time economic insights.</p>
+            <h2>Macroeconomic Insights Pipeline</h2>
+            <p>FRED API analytics project using Databricks, Spark, Delta Lake, a date-driven star schema, and a Power BI semantic model. Includes a published report and a public GitHub repository with implementation evidence.</p>
+            <ul class="project-meta">
+              <li>Databricks</li>
+              <li>Delta Lake</li>
+              <li>Power BI</li>
+            </ul>
             <ul class="actions">
-              <li><a href="fred_macro_dashboard.html" class="button">Learn more</a></li>
-              <li><a href="fred_macro_dashboard.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'FRED'})">LIVE Power BI</a></li>
+              <li><a href="macroeconomic-insights.html" class="button">Case study</a></li>
+              <li><a href="macroeconomic-insights.html#live-demo" class="button live">Open report</a></li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- Cyber -->
+
       <section>
-        <a href="#" class="image"><img src="images/png2jpg/4.jpg" alt="Global Cyber Incident Insights Dashboard"/></a>
+        <a href="cyber-incident-dashboard.html" class="image"><img src="images/generated/cyber-thumb.svg" alt="Abstract cyber incident analytics visual" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Global Cyber Incident Insights Dashboard</h2>
-            <p>Orchestrated Airflow-powered ingestion of 3 GB/day of cyber incident data into Snowflake, then built Power BI dashboards that detect and visualize zero-day threats in under 30 minutes. This reduced security response times by 40% and provided 24/7 operational intelligence to SecOps teams.</p>
+            <h2>Cyber Incident Analytics Model</h2>
+            <p>Security analytics case study for public breach and incident data. The project frames ingestion, storage, modeling, and Power BI reporting patterns for incident drill-downs by geography, vector, and severity.</p>
+            <ul class="project-meta">
+              <li>Airflow pattern</li>
+              <li>Snowflake/dbt</li>
+              <li>Power BI</li>
+            </ul>
             <ul class="actions">
-              <li><a href="generic copy 3.html" class="button">Learn more</a></li>
-              <li><a href="generic copy 3.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Cyber'})">LIVE Power BI</a></li>
+              <li><a href="cyber-incident-dashboard.html" class="button">Case study</a></li>
+              <li><a href="cyber-incident-dashboard.html#live-demo" class="button live">Open report</a></li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- E-Commerce -->
+
       <section>
-        <a href="#" class="image"><img src="images/png2jpg/1.jpg" alt="E-Commerce Behaviour Dashboard"/></a>
+        <a href="ecommerce-behavior-dashboard.html" class="image"><img src="images/generated/ecommerce-thumb.svg" alt="Abstract e-commerce behavior analytics visual" /></a>
         <div class="content">
           <div class="inner">
-            <h2>E‑Commerce Behaviour Dashboard</h2>
-            <p>Developed a Snowflake-based data warehouse for 57 GB of REES46 transaction data and authored interactive Power BI reports identifying cart-abandon hotspots. Insights drove a 7% lift in monthly GMV and saved 10 hours/week in manual reporting.</p>
+            <h2>E-Commerce Behavior Report</h2>
+            <p>Large public REES46 dataset exploration focused on events, categories, brands, carts, and conversion signals. The work highlights data shaping, model size constraints, and analyst-friendly Power BI UX.</p>
+            <ul class="project-meta">
+              <li>135M rows</li>
+              <li>Python ETL</li>
+              <li>Power Query</li>
+            </ul>
             <ul class="actions">
-              <li><a href="generic.html" class="button">Learn more</a></li>
-              <li><a href="generic.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'Ecommerce'})">LIVE Power BI</a></li>
+              <li><a href="ecommerce-behavior-dashboard.html" class="button">Case study</a></li>
+              <li><a href="ecommerce-behavior-dashboard.html#live-demo" class="button live">Open report</a></li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- Plant Co -->
+
       <section>
-        <a href="#" class="image"><img src="images/png2jpg/2.jpg" alt="Plant Co. Sales Dashboard"/></a>
+        <a href="plant-sales-dashboard.html" class="image"><img src="images/generated/sales-thumb.svg" alt="Abstract sales performance analytics visual" /></a>
         <div class="content">
           <div class="inner">
-            <h2>Plant Co. Sales Dashboard</h2>
-            <p>Created Power BI dashboards tracking gross profit margins, monthly sales waterfall charts, and region-specific performance metrics. Strategic pricing and inventory adjustments based on these insights boosted profits by 12% in underperforming regions.</p>
+            <h2>Plant Co. Sales Performance</h2>
+            <p>Simulated sales and gross-profit report built around time intelligence, country and product segmentation, waterfall analysis, and margin-focused executive reporting.</p>
+            <ul class="project-meta">
+              <li>DAX</li>
+              <li>Power Query</li>
+              <li>Sales analytics</li>
+            </ul>
             <ul class="actions">
-              <li><a href="generic copy.html" class="button">Learn more</a></li>
-              <li><a href="generic copy.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'PlantCo'})">LIVE Power BI</a></li>
+              <li><a href="plant-sales-dashboard.html" class="button">Case study</a></li>
+              <li><a href="plant-sales-dashboard.html#live-demo" class="button live">Open report</a></li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- ModelQuest -->
+
       <section>
-        <a href="#" class="image"><img src="images/png2jpg/3.jpg" alt="ModelQuest Dashboard"/></a>
+        <a href="modelquest-dashboard.html" class="image"><img src="images/generated/ai-thumb.svg" alt="Abstract AI model metadata analytics visual" /></a>
         <div class="content">
           <div class="inner">
-            <h2>ModelQuest Dashboard</h2>
-            <p>Built Power BI analytics for AI model metadata, visualizing training hours, parameter growth, and release cadence. Analysis revealed a 5× compute-efficiency gain in transformer models, guiding strategic R&D investments.</p>
+            <h2>ModelQuest AI Model Trends</h2>
+            <p>Curated public AI model metadata transformed into a Power BI report for model launches, training effort, parameter growth, and model-family comparisons over time.</p>
+            <ul class="project-meta">
+              <li>Python</li>
+              <li>Metadata modeling</li>
+              <li>DAX</li>
+            </ul>
             <ul class="actions">
-              <li><a href="generic copy 2.html" class="button">Learn more</a></li>
-              <li><a href="generic copy 2.html#live-demo" class="button live" onclick="gtag('event','demo_click',{event_category:'Portfolio',event_label:'ModelQuest'})">LIVE Power BI</a></li>
+              <li><a href="modelquest-dashboard.html" class="button">Case study</a></li>
+              <li><a href="modelquest-dashboard.html#live-demo" class="button live">Open report</a></li>
             </ul>
           </div>
         </div>
       </section>
     </section>
 
-    <!-- My Approach -->
     <section id="two" class="wrapper style3 fade-up">
       <div class="inner">
-        <h2>My Approach</h2>
-        <p>I combine rigorous analytics with business context, moving from raw data to decisions that improve revenue, cost, and user‑experience.</p>
+        <h2>How I Work</h2>
+        <p>Hiring managers should be able to inspect both the report and the thinking behind it. I structure projects around source data, transformations, model design, business questions, and a clear delivery layer.</p>
         <div class="features">
           <section>
             <span class="icon solid major fa-database"></span>
-            <h3>Data Engineering</h3>
-            <p>Design cloud ETL pipelines (Airflow · Snowflake · Azure · AWS · Databricks · PySpark) that deliver trusted, timely data.</p>
+            <h3>Data Pipelines</h3>
+            <p>Build repeatable ingestion and transformation flows with Python, SQL, Spark, Airflow patterns, and cloud storage.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-project-diagram"></span>
+            <h3>Modeling</h3>
+            <p>Design fact/dimension structures, date tables, metric layers, and Power BI semantic models that are easy to reason about.</p>
           </section>
           <section>
             <span class="icon solid major fa-chart-bar"></span>
-            <h3>Advanced Analysis</h3>
-            <p>Unlock insights with SQL window functions and Python ML where it adds value.</p>
+            <h3>BI Delivery</h3>
+            <p>Turn raw datasets into focused BI reports with filters, drill paths, KPI logic, and a clear narrative for decision makers.</p>
           </section>
           <section>
-            <span class="icon solid major fa-eye"></span>
-            <h3>Compelling Visuals</h3>
-            <p>Craft Tableau / Power BI stories that move leadership from data to decision.</p>
+            <span class="icon solid major fa-code-branch"></span>
+            <h3>Versioned Work</h3>
+            <p>Use GitHub and project documentation where possible so the work is reviewable beyond screenshots and report embeds.</p>
           </section>
           <section>
-            <span class="icon solid major fa-gem"></span>
-            <h3>Business Intelligence</h3>
-            <p>Build KPI frameworks that align analytics with revenue and retention goals.</p>
+            <span class="icon solid major fa-check-circle"></span>
+            <h3>Credible Claims</h3>
+            <p>Separate public/simulated case studies from production outcomes, and explain assumptions instead of overstating impact.</p>
           </section>
           <section>
             <span class="icon solid major fa-users"></span>
-            <h3>Stakeholder Collaboration</h3>
-            <p>Translate needs into technical specs and iterate quickly on feedback.</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-sync-alt"></span>
-            <h3>Continuous Optimisation</h3>
-            <p>Measure, learn, and improve to keep pipelines fast and insights relevant.</p>
+            <h3>Stakeholder Fit</h3>
+            <p>Translate open-ended business questions into datasets, measures, visuals, and delivery artifacts that teams can actually use.</p>
           </section>
         </div>
       </div>
     </section>
 
-    <!-- Get in touch -->
     <section id="contact" class="wrapper style1 fade-up">
       <div class="inner">
-        <h2>Get in touch</h2>
-        <p>Ready to upgrade your BI? Let’s chat.</p>
+        <h2>Contact</h2>
+        <p>Open to data engineering, analytics engineering, and BI roles where clean pipelines and practical reporting matter.</p>
         <ul class="contact">
           <li>
             <h3>Email</h3>
-            <a href="mailto:ronen@Ha-makolet.co.il">ronen@Ha-makolet.co.il</a>
+            <a href="mailto:ronenlasnick@icloud.com">ronenlasnick@icloud.com</a>
           </li>
           <li>
             <h3>Phone</h3>
-            <span>+972‑52‑563‑5971</span>
+            <span>+972-52-563-5971</span>
           </li>
           <li>
             <h3>Social</h3>
@@ -188,19 +216,17 @@
         </ul>
       </div>
     </section>
-
   </div>
 
-  <!-- Footer -->
   <footer id="footer" class="wrapper style1-alt">
     <div class="inner">
       <ul class="menu">
-        <li>© Ronen Lesnick. All rights reserved.</li>
+        <li>&copy; Ronen Lesnick. All rights reserved.</li>
+        <li>Design foundation: <a href="https://html5up.net">HTML5 UP</a></li>
       </ul>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrollex.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>

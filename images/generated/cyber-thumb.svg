@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract cyber incident analytics visual">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050910"/><stop offset="1" stop-color="#0a1f25"/></linearGradient>
+    <radialGradient id="glow" cx="52%" cy="50%" r="50%"><stop stop-color="#5eead4" stop-opacity="0.34"/><stop offset="1" stop-color="#5eead4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect width="1200" height="800" fill="url(#glow)"/>
+  <g stroke="#d7c187" stroke-opacity="0.13"><path d="M0 180H1200M0 320H1200M0 460H1200M0 600H1200M180 0V800M360 0V800M540 0V800M720 0V800M900 0V800"/></g>
+  <g transform="translate(250 100)" fill="none">
+    <path d="M350 20L660 150V348C660 472 520 570 350 620C180 570 40 472 40 348V150L350 20Z" fill="#06111b" opacity="0.78" stroke="#d7c187" stroke-opacity="0.28" stroke-width="3"/>
+    <g stroke="#5eead4" stroke-opacity="0.56" stroke-width="3">
+      <path d="M170 245L350 190L532 250M170 245L250 392L350 190L450 392L532 250M250 392H450"/>
+      <path d="M350 190V500"/>
+    </g>
+    <g fill="#d7c187"><circle cx="170" cy="245" r="13"/><circle cx="350" cy="190" r="13"/><circle cx="532" cy="250" r="13"/><circle cx="250" cy="392" r="13"/><circle cx="450" cy="392" r="13"/></g>
+    <g fill="#ef7d55" opacity="0.85"><circle cx="118" cy="322" r="7"/><circle cx="578" cy="352" r="7"/><circle cx="352" cy="520" r="7"/></g>
+  </g>
+</svg>

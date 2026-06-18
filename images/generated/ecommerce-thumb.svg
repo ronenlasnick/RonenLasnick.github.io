@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract e-commerce behavior analytics visual">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050910"/><stop offset="1" stop-color="#10251f"/></linearGradient>
+    <radialGradient id="glow" cx="70%" cy="42%" r="58%"><stop stop-color="#d7c187" stop-opacity="0.28"/><stop offset="1" stop-color="#d7c187" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect width="1200" height="800" fill="url(#glow)"/>
+  <g transform="translate(135 118)">
+    <rect width="930" height="560" rx="34" fill="#06111b" opacity="0.78" stroke="#d7c187" stroke-opacity="0.22"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M92 420C210 300 315 494 430 350S640 182 820 255" stroke="#d7c187" stroke-width="6"/>
+      <path d="M92 212H248C328 212 328 322 408 322H562C642 322 642 220 722 220H838" stroke="#5eead4" stroke-opacity="0.52" stroke-width="4"/>
+    </g>
+    <g fill="#0b1d2a" stroke="#d7c187" stroke-opacity="0.26">
+      <rect x="92" y="118" width="138" height="92" rx="18"/><rect x="292" y="278" width="138" height="92" rx="18"/><rect x="492" y="226" width="138" height="92" rx="18"/><rect x="692" y="148" width="138" height="92" rx="18"/>
+    </g>
+    <g fill="#d7c187"><circle cx="92" cy="420" r="10"/><circle cx="430" cy="350" r="10"/><circle cx="820" cy="255" r="10"/></g>
+    <g stroke="#ffffff" stroke-opacity="0.12"><path d="M150 148H200M150 178H214M350 308H398M350 338H410M550 256H600M550 286H612M750 178H798M750 208H810"/></g>
+  </g>
+</svg>

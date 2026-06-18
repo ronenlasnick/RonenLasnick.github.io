@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract sales performance analytics visual">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050910"/><stop offset="1" stop-color="#13251b"/></linearGradient>
+    <radialGradient id="glow" cx="45%" cy="30%" r="55%"><stop stop-color="#d7c187" stop-opacity="0.36"/><stop offset="1" stop-color="#d7c187" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect width="1200" height="800" fill="url(#glow)"/>
+  <g transform="translate(145 110)">
+    <rect width="910" height="580" rx="34" fill="#06111b" opacity="0.78" stroke="#d7c187" stroke-opacity="0.22"/>
+    <g transform="translate(92 110)">
+      <g fill="#d7c187" opacity="0.86">
+        <rect x="0" y="260" width="80" height="110" rx="10"/><rect x="116" y="210" width="80" height="160" rx="10"/><rect x="232" y="150" width="80" height="220" rx="10"/><rect x="348" y="90" width="80" height="280" rx="10"/><rect x="464" y="176" width="80" height="194" rx="10"/><rect x="580" y="58" width="80" height="312" rx="10"/>
+      </g>
+      <path d="M40 245L156 190L272 130L388 70L504 158L620 42" fill="none" stroke="#5eead4" stroke-opacity="0.65" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g stroke="#ffffff" stroke-opacity="0.1"><path d="M0 370H735M0 278H735M0 186H735M0 94H735"/></g>
+      <g fill="#5eead4"><circle cx="388" cy="70" r="9"/><circle cx="620" cy="42" r="9"/></g>
+    </g>
+  </g>
+</svg>

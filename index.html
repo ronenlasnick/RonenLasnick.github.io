@@ -1,180 +1,239 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ronen Lesnick's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ronen Lesnick's data engineering and business intelligence portfolio: ETL pipelines, analytics models, and Power BI reports built from public and simulated datasets." />
+  <meta property="og:title" content="Ronen Lesnick | Data Engineering Portfolio" />
+  <meta property="og:description" content="ETL, analytics engineering, and Power BI case studies with published reports and implementation notes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ronenlasnick.github.io/" />
+  <meta property="og:image" content="https://ronenlasnick.github.io/images/fred_dashboard.png" />
+  <title>Ronen Lesnick | Data Engineering Portfolio</title>
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/portfolio-polish.css" rel="stylesheet" />
+  <style>
+    @media(max-width:420px){ ul.actions .button{ margin:0 0 .6rem 0; } }
+  </style>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PM6L84QZ');</script>
+</head>
+<body class="is-preload">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6L84QZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">My Expertise</a></li>
-							<li><a href="#two">My Approach</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <section id="sidebar">
+    <div class="inner">
+      <nav>
+        <ul>
+          <li><a href="#intro">Profile</a></li>
+          <li><a href="#one">Projects</a></li>
+          <li><a href="#two">Workflow</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <div id="wrapper">
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+      <div class="inner">
+        <span class="eyebrow">Data Engineering + Business Intelligence</span>
+        <h1>Ronen Lesnick</h1>
+        <p>I build analytics pipelines, semantic models, and decision-ready BI reports from messy operational and public datasets. This portfolio focuses on practical data work: ingestion, modeling, DAX/SQL logic, and Power BI delivery.</p>
+        <ul class="hero-metrics">
+          <li>Python, SQL, Power BI</li>
+          <li>Databricks, Spark, Delta Lake</li>
+          <li>Snowflake, Airflow, AWS, Azure</li>
+          <li>Public and simulated datasets</li>
+        </ul>
+        <ul class="actions">
+          <li><a href="#one" class="button primary scrolly">View projects</a></li>
+          <li><a href="https://github.com/ronenlasnick" class="button ghost">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ronen-lesnick" class="button ghost">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Ronen Lesnick</h1>
-							<p>
-								Turning Data Into Decisions With Precision And Purpose 📊🔍. Expertise in Excel, SQL, Python, and Power BI—every Project Is a Blend of Strategy 🎯 Creativity 🎨, And Impact 💥. 
-								<p>
-								
-								</p>Data Doesn’t Lie, But It Sure Can Tell A Great Story.</a></p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+    <section id="one" class="wrapper style2 spotlights">
+      <section>
+        <a href="macroeconomic-insights.html" class="image"><img src="images/generated/macro-thumb.svg" alt="Abstract macroeconomic data pipeline visual" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Macroeconomic Insights Pipeline</h2>
+            <p>FRED API analytics project using Databricks, Spark, Delta Lake, a date-driven star schema, and a Power BI semantic model. Includes a published report and a public GitHub repository with implementation evidence.</p>
+            <ul class="project-meta">
+              <li>Databricks</li>
+              <li>Delta Lake</li>
+              <li>Power BI</li>
+            </ul>
+            <ul class="actions">
+              <li><a href="macroeconomic-insights.html" class="button">Case study</a></li>
+              <li><a href="macroeconomic-insights.html#live-demo" class="button live">Open report</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>In-Depth Consumer Analysis
-									</h2>
-									<p>Delving into the e-commerce landscape, this comprehensive analysis uncovers crucial insights and trends in consumer behavior from October 2019 to April 2020, transforming data into actionable strategies.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Performance Dashboard for Plant Co.</h2>
-									<p>Gain insights into gross profit trends and performance metrics for Plant Co.</p>
-									<ul class="actions">
-										<li><a href="generic copy.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>ModelQuest Dashboard</h2>
-									<p>Explore a detailed analysis of various AI models, showcasing their training hours, launch years, and the evolution of model development over time, offering valuable insights into the growing complexity and performance improvements across multiple years.</p>
-									<ul class="actions">
-										<li><a href="generic copy 2.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+      <section>
+        <a href="cyber-incident-dashboard.html" class="image"><img src="images/generated/cyber-thumb.svg" alt="Abstract cyber incident analytics visual" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Cyber Incident Analytics Model</h2>
+            <p>Security analytics case study for public breach and incident data. The project frames ingestion, storage, modeling, and Power BI reporting patterns for incident drill-downs by geography, vector, and severity.</p>
+            <ul class="project-meta">
+              <li>Airflow pattern</li>
+              <li>Snowflake/dbt</li>
+              <li>Power BI</li>
+            </ul>
+            <ul class="actions">
+              <li><a href="cyber-incident-dashboard.html" class="button">Case study</a></li>
+              <li><a href="cyber-incident-dashboard.html#live-demo" class="button live">Open report</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>My Approach</h2>
-							<p>Transforming data into actionable insights through a strategic, analytical approach to drive business growth and innovation.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Data Analysis</h3>
-									<p>Skilled in analyzing large datasets to extract actionable insights and inform decision-making.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Stakeholder Management</h3>
-									<p>Proficient in collaborating with stakeholders to align business goals and drive actionable insights.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Python</h3>
-									<p>Experienced in using Python for data analysis, and building data-driven solutions. Pandas, Numpy, Matplotlib, Seaborn</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>SQL</h3>
-									<p>Proficient in writing complex SQL queries to manipulate and extract data from relational databases.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Data Visualization</h3>
-									<p>Skilled in transforming complex data into clear, compelling visual representations for stakeholders.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Business Intelligence (BI)</h3>
-									<p>Experienced in leveraging BI tools to drive data-informed strategies and improve business performance.</p>
-						
-						</div>
-					</section>
+      <section>
+        <a href="ecommerce-behavior-dashboard.html" class="image"><img src="images/generated/ecommerce-thumb.svg" alt="Abstract e-commerce behavior analytics visual" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>E-Commerce Behavior Report</h2>
+            <p>Large public REES46 dataset exploration focused on events, categories, brands, carts, and conversion signals. The work highlights data shaping, model size constraints, and analyst-friendly Power BI UX.</p>
+            <ul class="project-meta">
+              <li>135M rows</li>
+              <li>Python ETL</li>
+              <li>Power Query</li>
+            </ul>
+            <ul class="actions">
+              <li><a href="ecommerce-behavior-dashboard.html" class="button">Case study</a></li>
+              <li><a href="ecommerce-behavior-dashboard.html#live-demo" class="button live">Open report</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Ready to take your project to the next level? Reach out today, and let’s discuss how I can help turn your vision into reality!</p>
-					
-								<section>
-									<ul class="contact">
-								
-										<li>
-											<h3>Email</h3>
-											<a href="#">ronen@Ha-makolet.co.il</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>052-563-5971</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://www.facebook.com/ronen.lesnick" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="https://github.com/ronenlasnick" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/ronen_lasnick" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/ronen-lesnick" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Ronen Lesnick All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+      <section>
+        <a href="plant-sales-dashboard.html" class="image"><img src="images/generated/sales-thumb.svg" alt="Abstract sales performance analytics visual" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>Plant Co. Sales Performance</h2>
+            <p>Simulated sales and gross-profit report built around time intelligence, country and product segmentation, waterfall analysis, and margin-focused executive reporting.</p>
+            <ul class="project-meta">
+              <li>DAX</li>
+              <li>Power Query</li>
+              <li>Sales analytics</li>
+            </ul>
+            <ul class="actions">
+              <li><a href="plant-sales-dashboard.html" class="button">Case study</a></li>
+              <li><a href="plant-sales-dashboard.html#live-demo" class="button live">Open report</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <section>
+        <a href="modelquest-dashboard.html" class="image"><img src="images/generated/ai-thumb.svg" alt="Abstract AI model metadata analytics visual" /></a>
+        <div class="content">
+          <div class="inner">
+            <h2>ModelQuest AI Model Trends</h2>
+            <p>Curated public AI model metadata transformed into a Power BI report for model launches, training effort, parameter growth, and model-family comparisons over time.</p>
+            <ul class="project-meta">
+              <li>Python</li>
+              <li>Metadata modeling</li>
+              <li>DAX</li>
+            </ul>
+            <ul class="actions">
+              <li><a href="modelquest-dashboard.html" class="button">Case study</a></li>
+              <li><a href="modelquest-dashboard.html#live-demo" class="button live">Open report</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
 
-	</body>
+    <section id="two" class="wrapper style3 fade-up">
+      <div class="inner">
+        <h2>How I Work</h2>
+        <p>Hiring managers should be able to inspect both the report and the thinking behind it. I structure projects around source data, transformations, model design, business questions, and a clear delivery layer.</p>
+        <div class="features">
+          <section>
+            <span class="icon solid major fa-database"></span>
+            <h3>Data Pipelines</h3>
+            <p>Build repeatable ingestion and transformation flows with Python, SQL, Spark, Airflow patterns, and cloud storage.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-project-diagram"></span>
+            <h3>Modeling</h3>
+            <p>Design fact/dimension structures, date tables, metric layers, and Power BI semantic models that are easy to reason about.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-chart-bar"></span>
+            <h3>BI Delivery</h3>
+            <p>Turn raw datasets into focused BI reports with filters, drill paths, KPI logic, and a clear narrative for decision makers.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-code-branch"></span>
+            <h3>Versioned Work</h3>
+            <p>Use GitHub and project documentation where possible so the work is reviewable beyond screenshots and report embeds.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-check-circle"></span>
+            <h3>Credible Claims</h3>
+            <p>Separate public/simulated case studies from production outcomes, and explain assumptions instead of overstating impact.</p>
+          </section>
+          <section>
+            <span class="icon solid major fa-users"></span>
+            <h3>Stakeholder Fit</h3>
+            <p>Translate open-ended business questions into datasets, measures, visuals, and delivery artifacts that teams can actually use.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrapper style1 fade-up">
+      <div class="inner">
+        <h2>Contact</h2>
+        <p>Open to data engineering, analytics engineering, and BI roles where clean pipelines and practical reporting matter.</p>
+        <ul class="contact">
+          <li>
+            <h3>Email</h3>
+            <a href="mailto:ronenlasnick@icloud.com">ronenlasnick@icloud.com</a>
+          </li>
+          <li>
+            <h3>Phone</h3>
+            <span>+972-52-563-5971</span>
+          </li>
+          <li>
+            <h3>Social</h3>
+            <ul class="icons">
+              <li><a href="https://github.com/ronenlasnick" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="https://www.linkedin.com/in/ronen-lesnick" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; Ronen Lesnick. All rights reserved.</li>
+        <li>Design foundation: <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio-analytics.js"></script>
+</body>
 </html>

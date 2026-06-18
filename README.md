@@ -21,6 +21,20 @@ This site presents data engineering, analytics engineering, and BI case studies 
 - **Cloud and Warehouse Patterns:** AWS S3, Azure, Snowflake
 - **Orchestration and Delivery:** Airflow patterns, GitHub, GitHub Pages
 
+## Analytics
+
+Google Tag Manager is installed with container `GTM-PM6L84QZ`. The shared engagement layer lives in `assets/js/portfolio-analytics.js` and pushes these custom events to `dataLayer`:
+
+- `portfolio_page_view`
+- `portfolio_section_view`
+- `portfolio_scroll_depth`
+- `portfolio_link_click`
+- `portfolio_powerbi_embed_view`
+- `portfolio_interaction`
+- `portfolio_engaged_time`
+
+Configure matching Custom Event triggers in GTM if these events should be forwarded to GA4 or another analytics destination.
+
 ## Contact
 
 Email: [ronenlasnick@icloud.com](mailto:ronenlasnick@icloud.com)  

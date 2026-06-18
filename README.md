@@ -2,7 +2,7 @@
 
 Personal portfolio hosted on GitHub Pages: [ronenlasnick.github.io](https://ronenlasnick.github.io).
 
-This site presents data engineering, analytics engineering, and BI case studies built from public or simulated datasets. The focus is on practical delivery: ingestion, modeling, DAX/SQL logic, and live Power BI dashboards.
+This site presents data engineering, analytics engineering, and BI case studies built from public or simulated datasets. The focus is on practical delivery: ingestion, modeling, DAX/SQL logic, and published Power BI reports.
 
 ## Featured Projects
 
@@ -10,9 +10,9 @@ This site presents data engineering, analytics engineering, and BI case studies 
 | --- | --- |
 | **Macroeconomic Insights Pipeline** | FRED API data pipeline with Databricks, Spark, Delta Lake, dimensional modeling, Power BI, and public GitHub evidence. |
 | **Cyber Incident Analytics Model** | Public-data security analytics case study using cloud-ingestion and Snowflake/dbt-style modeling concepts. |
-| **E-Commerce Behavior Dashboard** | REES46 public behavior dataset exploration with Python, Power Query, and Power BI. |
-| **Plant Co. Sales Performance** | Simulated sales and gross-profit dashboard using Power Query, DAX time intelligence, and executive BI design. |
-| **ModelQuest AI Model Trends** | Public AI model metadata transformed into a Power BI trend dashboard. |
+| **E-Commerce Behavior Report** | REES46 public behavior dataset exploration with Python, Power Query, and Power BI. |
+| **Plant Co. Sales Performance** | Simulated sales and gross-profit report using Power Query, DAX time intelligence, and executive BI design. |
+| **ModelQuest AI Model Trends** | Public AI model metadata transformed into a Power BI trend report. |
 
 ## Technologies Represented
 
